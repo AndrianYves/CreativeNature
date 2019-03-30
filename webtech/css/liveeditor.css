@@ -1,0 +1,13 @@
+ head, [contenteditable] {
+      display: block;
+    }
+
+    style.default {
+      display: none;
+    }
+
+    style {
+      white-space: pre-wrap;       
+      padding: 10px 20px;
+      width: 50%;
+    }
