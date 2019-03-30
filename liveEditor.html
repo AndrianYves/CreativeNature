@@ -61,207 +61,22 @@
     style {
       white-space: pre-wrap;       
       padding: 10px 20px;
-      width: 100%;
-      z-index: 500px;
+      width: 50%;
+      z-index: 1px;
       border: solid;
-     font-size: 26px;
+     font-size: 18px;
      text-align: left;
+     float: right;
     }
+
+    #edit {
+    width: 50%;
+    float: left;
+  }
+
   </style>
 	<body contenteditable>
-    <div class="header">
-      <a href="#default" class="logo">AYM</a>
-      <div class="header_right" contenteditable="false"> 
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-    <div class="carousel">
-      <input type="radio" id="1" name="initiate" checked="checked" class="initiator"/>
-      <input type="radio" id="2" name="initiate" class="initiator"/>
-      <input type="radio" id="3" name="initiate" class="initiator"/>
-      <input type="radio" id="4" name="initiate" class="initiator"/>
-      <div class="controls">
-        <label for="2" class="carousel_control prev"></label>
-        <label for="4" class="carousel_control next"></label>
-      </div>
-      <div class="controls">
-        <label for="3" class="carousel_control prev"></label>
-        <label for="1" class="carousel_control next"></label>
-      </div>
-      <div class="controls">
-        <label for="4" class="carousel_control prev"></label>
-        <label for="2" class="carousel_control next"></label>
-      </div>
-      <div class="controls">
-        <label for="1" class="carousel_control prev"></label>
-        <label for="3" class="carousel_control next"></label>
-      </div>
-      <article class="content">
-        <img class="slide_image" src="images/Yves.jpg" alt="2 by 2 photo of myself">
-        <h2 class="caption">We will build something great!</h2>
-        <p class="text">Love to learn and still learning.</p>
-      </article>
-      <article class="content">
-        <h2 class="caption">"One of the best working scholar I have. Very detailed
-          and high quality in his work"
-        </h2>
-        <p class="text">Fr. Geraldo Costa CICM Sunflower Children's Center Director</p>
-        <h2 class="caption">"Easy to work with and friendly, he is very
-          adaptive to any culture or people"
-        </h2>
-        <p class="text">Mark Ryan Castillo TI Customer Support</p>
-        <h2 class="caption">"Hardworking and trustworthy a person who
-          can easily leaned on."
-        </h2>
-        <p class="text">Angeliz Santos Alorica Custoner service
-          representative
-        </p>
-        <h2 class="caption">"He works fast and produce more.
-          Dedicated to his work and always enjoying the task that
-          I ask him to do"
-        </h2>
-        <p class="text">Anthony Cacanindin Director Printing Press Office</p>
-      </article>
-      <article class="content">
-        <h2 class="caption">Find Me Interesting? Download my Resume</h2>
-        <a class="resume" href="files/Resume.pdf">Download Resume</a>
-      </article>
-      <article class="content">
-        <h2 class="caption">A Few fun facts about me</h2>
-        <p class="text">I don't eat much, I do skateboarding, 
-          my favorite number is 24, I adhored exes, I'm not a fan of Programming,
-          I'm a big fan of Leo Messi, I love watching football, I hate shrimps,
-          Never had a fist fight except with my brother but it's only a play. 
-        </p>
-      </article>
-      <div class="indicators">
-        <label for="1" class="indicator"></label>
-        <label for="2" class="indicator"></label>
-        <label for="3" class="indicator"></label>
-        <label for="4" class="indicator"></label>
-      </div>
-    </div>
-    <a id="about">
-      <h1>About ME</h1>
-    </a>
-    <h2>It was 24th of March 1994 the day I was born in Baguio but grew up in
-      Pampanga a year later. I am currently a working scholar at Sun Flower
-      Children's Center Saint Louis University. I was a Civil Enginnering
-      student before, now I am a Information Technology student. I enjoy
-      more the IT industry, I do enjoy designing websites or prototyping.
-      I usually browse in the internet and search something whatever I
-      want and things that I need to do, Most of the time I focus
-      on the design of the website that I browse, I was amaze how
-      they design their websites and how they came up with the idea
-      of their design.
-    </h2>
-    <h3>Facebook</h3>
-    <div class="grid">
-      <div class="container grid-item">
-        <img class="image" src="images/SistersandMother.jpg" alt="Sisters and Mother" />
-        <div class="overlay">
-          <div class="text">A group photo of my sisters and mother</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/Family.jpg" alt="family picture" />
-        <div class="overlay">
-          <div class="text">A new year family picture</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/DadandBrother.jpg" alt="Men in Family"  />
-        <div class="overlay">
-          <div class="text">Brother, Dad, and Me</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/Siblings.jpg" alt="selfie with siblings" />
-        <div class="overlay">
-          <div class="text">A new year selfie with my siblings</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/Brother.jpg" alt="brother's together photo" />
-        <div class="overlay">
-          <div class="text">Me and brother's first picture together</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/GroupReport.jpg" alt="Group Project" />
-        <div class="overlay">
-          <div class="text">A successful school project</div>
-        </div>
-      </div>
-    </div>
-    <h3>Youtube</h3>
-    <div class="grid">
-      <div class="container grid-item">
-        <iframe class="youtube_style" src="https://www.youtube.com/embed/O14SM7tSoVM?controls=0">
-        </iframe>
-        <div class="overlay">
-          <div class="text">Printing Press Office Got Talent</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <iframe class="youtube_style" src="https://www.youtube.com/embed/zIA0incI99s?controls=0">
-        </iframe>
-        <div class="overlay">
-          <div class="text">A video pitch in our Programming Application subject project</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <iframe class="youtube_style" src="https://www.youtube.com/embed/NTzi0O3hZ2Y?controls=0">
-        </iframe>
-        <div class="overlay">
-          <div class="text">A music video project in Foreign Language</div>
-        </div>
-      </div>
-    </div>
-    <a id="portfolio">
-      <h1>Portfolio</h1>
-    </a>
-    <h2>I use mockups to use for designing, and every school project that
-      requires prototyping, I always volunteer to do the job. Below are
-      my own design on our school project. 
-    </h2>
-    <h3>My own Design</h3>
-    <div class="grid">
-      <div class="container grid-item">
-        <img class="image" src="images/Design1.png" alt="Food ordering website" />
-        <div class="overlay">
-          <div class="text">A Prototype about Food Ordering System</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/Design2.png" alt="Online shopping website" />
-        <div class="overlay">
-          <div class="text">A prototype about online shopping website</div>
-        </div>
-      </div>
-      <div class="container grid-item">
-        <img class="image" src="images/Design3.png" alt="Seller's page" />
-        <div class="overlay">
-          <div class="text">A prototype of seller's page in online shopping website</div>
-        </div>
-      </div>
-    </div>
-    <a id="contact">
-      <h1>Contact</h1>
-    </a>
-    <a href="https://www.facebook.com/andrianyves.macalino">
-    <img src="images/FbLogo.png" alt="Facebook Logo" /></a>
-    <h2>0905 712 8373</h2>
-    <footer class="footer">
-      <div class="footer_right">
-        <a href="#about">About</a>
-        <a href="#portfolio" >Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </footer>
-	<style contenteditable>
+      <style contenteditable>
 
 *, *:before, *:after {
      box-sizing: border-box;
@@ -276,7 +91,7 @@
  h1 {
      border: 1px solid black;
      padding: 10px;
-     width: 100%;
+     width: 50%;
      font-family: Georgia;
      font-weight: normal;
      background-color: #FAFAFF;
@@ -528,14 +343,16 @@
      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
      text-transform: uppercase;
 }
+
  .header {
      box-shadow: 0px 0px 30px;
      overflow: hidden;
      position: fixed;
-     width: 100%;
+     width: 50%;
      z-index: 1;
      background-color: #FAFAFF;
 }
+
  .header a {
      float: left;
      color: black;
@@ -547,6 +364,7 @@
      border-radius: 4px;
      opacity: 1;
 }
+
  .header a.logo {
      font-size: 25px;
      font-weight: bold;
@@ -579,7 +397,7 @@
  .footer {
      box-shadow: 0px 0px 10px;
      overflow: hidden;
-     width: 100%;
+     width: 50%;
      z-index: 1;
      background-color: #FAFAFF;
 }
@@ -652,6 +470,199 @@
 
 
 </style>
+<div class="edit" conteneditable>
+    <div class="header">
+      <a href="#default" class="logo">AYM</a>
+      <div class="header_right" contenteditable="false"> 
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="carousel">
+      <input type="radio" id="1" name="initiate" checked="checked" class="initiator"/>
+      <input type="radio" id="2" name="initiate" class="initiator"/>
+      <input type="radio" id="3" name="initiate" class="initiator"/>
+      <input type="radio" id="4" name="initiate" class="initiator"/>
+      <div class="controls">
+        <label for="2" class="carousel_control prev"></label>
+        <label for="4" class="carousel_control next"></label>
+      </div>
+      <div class="controls">
+        <label for="3" class="carousel_control prev"></label>
+        <label for="1" class="carousel_control next"></label>
+      </div>
+      <div class="controls">
+        <label for="4" class="carousel_control prev"></label>
+        <label for="2" class="carousel_control next"></label>
+      </div>
+      <div class="controls">
+        <label for="1" class="carousel_control prev"></label>
+        <label for="3" class="carousel_control next"></label>
+      </div>
+      <article class="content">
+        <img class="slide_image" src="images/Yves.jpg" alt="2 by 2 photo of myself">
+        <h2 class="caption">We will build something great!</h2>
+        <p class="text">Love to learn and still learning.</p>
+      </article>
+      <article class="content">
+        <h2 class="caption">"One of the best working scholar I have. Very detailed
+          and high quality in his work"
+        </h2>
+        <p class="text">Fr. Geraldo Costa CICM Sunflower Children's Center Director</p>
+        <h2 class="caption">"Easy to work with and friendly, he is very
+          adaptive to any culture or people"
+        </h2>
+        <p class="text">Mark Ryan Castillo TI Customer Support</p>
+        <h2 class="caption">"Hardworking and trustworthy a person who
+          can easily leaned on."
+        </h2>
+        <p class="text">Angeliz Santos Alorica Custoner service
+          representative
+        </p>
+        <h2 class="caption">"He works fast and produce more.
+          Dedicated to his work and always enjoying the task that
+          I ask him to do"
+        </h2>
+        <p class="text">Anthony Cacanindin Director Printing Press Office</p>
+      </article>
+      <article class="content">
+        <h2 class="caption">Find Me Interesting? Download my Resume</h2>
+        <a class="resume" href="files/Resume.pdf">Download Resume</a>
+      </article>
+      <article class="content">
+        <h2 class="caption">A Few fun facts about me</h2>
+        <p class="text">I don't eat much, I do skateboarding, 
+          my favorite number is 24, I adhored exes, I'm not a fan of Programming,
+          I'm a big fan of Leo Messi, I love watching football, I hate shrimps,
+          Never had a fist fight except with my brother but it's only a play. 
+        </p>
+      </article>
+      <div class="indicators">
+        <label for="1" class="indicator"></label>
+        <label for="2" class="indicator"></label>
+        <label for="3" class="indicator"></label>
+        <label for="4" class="indicator"></label>
+      </div>
+    </div>
+    <a id="about">
+      <h1>About ME</h1>
+    </a>
+    <h2>It was 24th of March 1994 the day I was born in Baguio but grew up in
+      Pampanga a year later. I am currently a working scholar at Sun Flower
+      Children's Center Saint Louis University. I was a Civil Enginnering
+      student before, now I am a Information Technology student. I enjoy
+      more the IT industry, I do enjoy designing websites or prototyping.
+      I usually browse in the internet and search something whatever I
+      want and things that I need to do, Most of the time I focus
+      on the design of the website that I browse, I was amaze how
+      they design their websites and how they came up with the idea
+      of their design.
+    </h2>
+    <h3>Facebook</h3>
+    <div class="grid">
+      <div class="container grid-item">
+        <img class="image" src="images/SistersandMother.jpg" alt="Sisters and Mother" />
+        <div class="overlay">
+          <div class="text">A group photo of my sisters and mother</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/Family.jpg" alt="family picture" />
+        <div class="overlay">
+          <div class="text">A new year family picture</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/DadandBrother.jpg" alt="Men in Family"  />
+        <div class="overlay">
+          <div class="text">Brother, Dad, and Me</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/Siblings.jpg" alt="selfie with siblings" />
+        <div class="overlay">
+          <div class="text">A new year selfie with my siblings</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/Brother.jpg" alt="brother's together photo" />
+        <div class="overlay">
+          <div class="text">Me and brother's first picture together</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/GroupReport.jpg" alt="Group Project" />
+        <div class="overlay">
+          <div class="text">A successful school project</div>
+        </div>
+      </div>
+    </div>
+    <h3>Youtube</h3>
+    <div class="grid">
+      <div class="container grid-item">
+        <iframe class="youtube_style" src="https://www.youtube.com/embed/O14SM7tSoVM?controls=0">
+        </iframe>
+        <div class="overlay">
+          <div class="text">Printing Press Office Got Talent</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <iframe class="youtube_style" src="https://www.youtube.com/embed/zIA0incI99s?controls=0">
+        </iframe>
+        <div class="overlay">
+          <div class="text">A video pitch in our Programming Application subject project</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <iframe class="youtube_style" src="https://www.youtube.com/embed/NTzi0O3hZ2Y?controls=0">
+        </iframe>
+        <div class="overlay">
+          <div class="text">A music video project in Foreign Language</div>
+        </div>
+      </div>
+    </div>
+    <a id="portfolio">
+      <h1>Portfolio</h1>
+    </a>
+    <h2>I use mockups to use for designing, and every school project that
+      requires prototyping, I always volunteer to do the job. Below are
+      my own design on our school project. 
+    </h2>
+    <h3>My own Design</h3>
+    <div class="grid">
+      <div class="container grid-item">
+        <img class="image" src="images/Design1.png" alt="Food ordering website" />
+        <div class="overlay">
+          <div class="text">A Prototype about Food Ordering System</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/Design2.png" alt="Online shopping website" />
+        <div class="overlay">
+          <div class="text">A prototype about online shopping website</div>
+        </div>
+      </div>
+      <div class="container grid-item">
+        <img class="image" src="images/Design3.png" alt="Seller's page" />
+        <div class="overlay">
+          <div class="text">A prototype of seller's page in online shopping website</div>
+        </div>
+      </div>
+    </div>
+    <a id="contact">
+      <h1>Contact</h1>
+    </a>
+    <a href="https://www.facebook.com/andrianyves.macalino">
+    <h2>0905 712 8373</h2>
+    <footer class="footer">
+      <div class="footer_right">
+        <a href="#about">About</a>
+        <a href="#portfolio" >Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+</div>
 	</body>
 	</html>
 </script>
