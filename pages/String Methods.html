@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="" type="css" href="">
+        <link rel="" type="jscript" href="">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Raphael S. Apostol">
+        <meta name="Date" content="3/23/2019">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>String Methods</h1>
+        <p>String methods and properties are also available to primitive values.</p>
+        
+        <h2>Length</h2>
+        <p>length property returns the length of the string.
+        <br>Example:
+        <br>var eg = "ASDFGH";
+        <br>var eg1 = eg.length;</p>
+        
+        <h2>Finding a String in a String</h2>
+        <h3>indexOf()</h3>
+        <p>Using indexOf() method will return the index of the first occurrence of the specific text.
+        <br>Example:
+        <br>var eg = "Locate this";
+        <br>var find = eg.indexOf("this");</p>
+        
+        <h3>lastIndexOf()</h3>
+        <p>Using lastIndexOf() method will return the index of the first occurrence of the specific text.
+        <br>Example:
+        <br>var eg = "Locate this 'this' ";
+        <br>var find = eg.lastIndexOf("this");</p>
+        
+        <h2>Searching for a String in a String</h2>
+        <p>search() method used for searching a string in the specific value.
+        <br>Example:
+        <br>var eg = "Locate this";
+        <br>var find = eg.search("this");</p>
+        
+        <h2>Extracting String Parts</h2>
+        <p>3 methods for extracting a part of a string:</p>
+        <ul>
+            <li>substring(start, end)</li>
+            <li>substr(start, length)</li>
+            <li>slice(start, end)</li>
+        </ul>
+        
+        <h2>slice() Method</h2>
+        <p>This method extracts a part of string. It returns the extracted part that results to a new string.
+        <br>Example: 
+        <br>var eg = "Apple, Banana, Kiwi";
+            <br>var res = eg.slice(7, 13);</p>
+            
+            <h2>subtring() Method</h2>
+        <p>This method is similar to slice(), but this method doesn't accept negative indexes.
+        <br>Example: 
+        <br>var eg = "Apple, Banana, Kiwi";
+            <br>var res = eg.substring(7, 13);</p>
+        
+        <h2>substr Method</h2>
+        <p>This method is similar to slice(), the difference is the second parameter will have the specific length of the extracted part.
+        <br>Example: 
+        <br>var eg = "Apple, Banana, Kiwi";
+            <br>var res = eg.substr(7, 6);</p>
+        
+    <h2>Replacing String Content</h2>
+    <p>replace() Method will replace the specific value with another value of a string.
+        <br>Example: 
+        <br>eg = "Please visit my house";
+            <br>var res = eg.replace("my", "your");</p>
+        
+        <h2>Convert Upper and Lower Case</h2>
+        <p>toUpperCase() method is use to convert a string to upper case. While toLowerCase() method is use to convert a string to lower case.
+        <br>Example: 
+        <br>var eg = "Luh";
+        <br>var res = eg.toUpperCase(); //Upper Case
+            <br>
+        <br>var eg = "Luh";
+            <br>var res = eg.toLowerCase(); //Upper Case</p>
+        
+        <h2>concat() Method</h2>
+        <p>concat() Method joins two or more strings. 
+            <br>Example:
+            <br>var eg = "Luh";
+            <br>var eg1 = "Luh1";
+        <br>var res = eg.concat(" ", eg1); //Upper Case</p>
+        
+        <h2>trim()</h2>
+        <p>This method is use to remove whitespaces from strings.
+        <br>var eg = "    Luh      ";
+        <br>alert(eg.tring());
+            
+            <h2>Extracting String Characters</h2>
+        <p>3 methods for extracting string characters:</p>
+        <ul>
+            <li>charCodeAt(position)</li>
+            <li>chartAt(position)</li>
+            <li>Property access []</li>
+        </ul>
+        
+        <h2>chartAt() Method</h2>
+        <p>This method returns the character of a specific index in a string.
+                <br>var eg = "Luh";
+        <br>eg.chartAt(0);</p>
+        
+        <h2>chartCodeAt() Method</h2>
+        <p>This method will return the unicode of the character of a specific index in a string.
+        <br>var eg = "Luh";
+        <br>eg.charCodeAt(0); //Upper Case</p>
+        
+        <h2>Property Access</h2>
+        <p>This method allows property access [] on strings.
+        <br>var eg = "Luh";
+        <br>eg[0]; //Upper Case</p>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="" type="css" href="">
+        <link rel="" type="jscript" href="">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Raphael S. Apostol">
+        <meta name="Date" content="3/23/2019">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>Dates</h1>
+        
+        <h2>Creating Date Objects</h2>
+        <p>Dates are created with the new Date() constructor.</p>
+        <p>4 ways to create a new date objects:</p>
+        <ul>
+            <li>new Date()</li>
+            <li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+            <li>new Date(milliseconds)</li>
+            <li>new Date(date string)</li>
+        </ul>
+        
+        <h2>new Date()</h2>
+        <p>This method creates a new date object with the current date and time.
+        <br>Example: var det = new Date();</p>
+        
+        <h2>new Date(year, month, ...)</h2>
+        <p>This method creates a new date object for a specific date and time.
+        <br>Example: var det = new Date(2019, 11, 24, 10, 33, 30, 0);</p>
+        
+        <h2>Previous Century</h2>
+        <p>1 and 2 digits years will be described as 19xx.
+        <br>Example: var det = new Date(99, 11, 24);</p>
+        
+        <h2>new Date(dateString)</h2>
+        <p>This method creates a new date ibject from a date string.
+        <br>Example: var det = new Date("March 30, 2019 11:13:00");</p>
+        
+        <h2>new Date(milliseconds)</h2>
+        <p>This method creates a new date object as zero time plus milliseconds.
+        <br>Example: var det = new Date(0);</p>
+    </body>
+</html>
