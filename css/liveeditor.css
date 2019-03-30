@@ -9,5 +9,16 @@
     style {
       white-space: pre-wrap;       
       padding: 10px 20px;
-      width: 50%;
+      z-index: 500px;
+      border: solid;
     }
+
+.container {
+      height: 100%;
+      width: 50%;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
