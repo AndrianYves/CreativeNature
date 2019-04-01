@@ -1,0 +1,135 @@
+#cssintroduction {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#csssyntax {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssusage {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#csscolors {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssbackgrounds {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssborders {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssmargins {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssheightandwidth {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssboxmodel {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssoutline {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#csstext {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssfonts {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssicons {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#csslinks {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#cssalign {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+#csspadding {
+  width: 100%;
+  padding: auto;
+  background-color: gray;
+  display: none;
+}
+.btn1{
+ padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: #fbdedb;
+    background-color: #fbdedb;
+    display: inline-block;
+    background: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+.btn1:hover, .btn1:focus {
+    opacity: 0.8;
+}
+.btn1:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+.btn1.block {
+    display: block !important;
+}
+.green {
+    background-color: green;
+}

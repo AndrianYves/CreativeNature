@@ -2,44 +2,1439 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/js-notes/js-notes.css">
+    <link rel="stylesheet" type="text/css" href="css/css-notes/css-notes.css">
+    <script src="js/js-notes/showintroduction.js"></script>
+    <script src="js/js-notes/whereto.js"></script>
+    <script src="js/js-notes/output.js"></script>
+    <script src="js/js-notes/statements.js"></script>
+    <script src="js/js-notes/syntax.js"></script>
+    <script src="js/js-notes/comments.js"></script>
+    <script src="js/js-notes/variables.js"></script>
+    <script src="js/js-notes/operators.js"></script>
+    <script src="js/js-notes/arithmetic.js"></script>
+    <script src="js/js-notes/assignment.js"></script>
+    <script src="js/js-notes/datatypes.js"></script>
+    <script src="js/js-notes/events.js"></script>
+    <script src="js/js-notes/strings.js"></script>
+    <script src="js/js-notes/stringmethods.js"></script>
+    <script src="js/js-notes/numbers.js"></script>
+    <script src="js/js-notes/numbermethods.js"></script>
+    <script src="js/js-notes/array.js"></script>
+    <script src="js/js-notes/date.js"></script>
+    <script src="js/js-notes/function12.js"></script>
+    <script src="js/js-notes/objects.js"></script>
+    <script src="js/js-notes/displayjs.js"></script>
+
+<script src="js/css-notes/cssshowintroduction.js"></script>
+<script src="js/css-notes/cssalign.js"></script>
+<script src="js/css-notes/cssbackgrounds.js"></script>
+<script src="js/css-notes/cssborders.js"></script>
+<script src="js/css-notes/cssboxmodel.js"></script>
+<script src="js/css-notes/csscolors.js"></script>
+<script src="js/css-notes/cssfonts.js"></script>
+<script src="js/css-notes/cssheightandwidth.js"></script>
+<script src="js/css-notes/cssicons.js"></script>
+<script src="js/css-notes/csslinks.js"></script>
+<script src="js/css-notes/cssmargins.js"></script>
+<script src="js/css-notes/cssoutline.js"></script>
+<script src="js/css-notes/csspadding.js"></script>
+<script src="js/css-notes/csssyntax.js"></script>
+<script src="js/css-notes/csstext.js"></script>
+<script src="js/css-notes/cssusage.js"></script>
+<script src="js/css-notes/displaycss.js"></script>
+	
+    <script src="js/html-notes/displayhtml.js"></script>
 </head>
 
 <body>
-        <div class="navmenu">
-            <div class="nav-left">
-                <div class="navlink-image">
-                </div>
-            </div>
-            <div class="nav-center">
-                <div class="navlink">
-                    <a href="#">HTML</a>
-                    <a href="#">CSS</a>
-                    <a href="#">JAVASCRIPT</a>
-                </div>
-            </div>
-            <div class="nav-right">
-                <div class="navlink-notes">
-                    <a href="#">Notes</a>
-                </div>
+    <div class="navmenu">
+        <div class="nav-left">
+            <div class="navlink-image">
             </div>
         </div>
-        <div class="main">
-            <div class="main-nav-left">
-                <ul class="topic-a">
-                    <li class="topic"><a href="">HTML</a></li>
-                    <li class="topic"><a href="">CSS</a></li>
-                    <li class="topic"><a href="">JAVASCRIPT</a></li>
-                </ul>
-            </div>
-            <div class="main-nav-right">
+        <div class="nav-center">
+            <div class="navlink">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIPT</a>
             </div>
         </div>
+        <div class="nav-right">
+            <div class="navlink-notes">
+                <a href="#">Notes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-nav-left">
+            <ul class="topic-a">
+                <li class="topic"><a onclick="displayhtml()">HTML</a></li>
+                <li class="topic"><a onclick="displaycss()">CSS</a></li>
+                <li class="topic"><a onclick="displayjs()">JAVASCRIPT</a></li>
+            </ul>
+        </div>
+        <div class="main-nav-right" id="notes">
+            <div id="note3" style="display:none;">
+                <h2>JAVASCRIPT</h2>
+                <a class="btn red block" onclick="showintroduction()">Introduction</a>
+                <div id="introduction">
+                    <h1>Introduction</h1>
+                    <p>JavaScript is easy to learn. It is the Programming Language of the Web. It can update both HTML
+                        and CSS. Data manipulation, validation, and calculation are the common uses of JavaScript.</p>
+
+                    <h2>Changing HTML content</h2>
+                    <p>The method getElementById() is use to "find" HTML element and converting the element content
+                        (innerHTML).<br> Example: document.getElementById("example").innerHTML = "JScript";
+                    </p>
+
+                    <h2>Change HTML Attribute Values</h2>
+                    <p>JavaScript can change the value of src or (source) attribute of <img> tag:
+                    </p>
+
+                    <h2>Change HTML Styles (CSS)</h2>
+                    <p>JavaScript can change the style of an HTML element.
+                        <br>Example:
+                        document.getElementById("example").style.fontSize = "20px";
+                    </p>
+
+                    <h2>Hide HTML Elements</h2>
+                    <p>JavaScript can hide elements (HTML elements) by using the <b>display</b> style:
+                        <br>Example:
+                        document.getElementById("example").style.display = "none";
+                    </p>
+
+                    <h2>Show HTML Elements</h2>
+                    <p>JavaScript can also show hidden elements (HTML elements) by using the <b>display</b> style:
+                        <br>Example:
+                        document.getElementById("example").style.display = "block";
+                    </p>
+                </div>
+                <a class="btn red block" onclick="whereto()">Where To</a>
+                <div id="whereto">
+                    <h1>Where To</h1>
+                    <p>The codes of JavaScript should be inserted between starting script tag and end script tag:
+                        <br>Example:
+                        <br>
+                        script
+                        <br>
+                        document.getElementById("example").innerHTML = "JScript";
+                        <br>
+                        /script
+                        <br>
+                    </p>
+
+                    <h2>Functions and Events</h2>
+                    <p>JavaScript <b>function</b> block can be executed when "called" for. </p>
+
+                    <h2>Javascript in Head tag or Body tag</h2>
+                    <p>The user can place any amount of scripts in HTML document. It can be placed in the Body or Head
+                        part of HTML page.</p>
+
+                    <h2>Java Script in Head Tag</h2>
+                    <br>
+                    Example:
+                    <br>
+                    <br>
+                    head
+                    <br>
+                    script
+                    <br>
+                    function myFunction(){
+                    <br>
+                    document.getElementById("example").innerHTML = "Jscript Change";
+                    <br>
+                    }
+                    <br>
+                    /script
+                    <br>
+                    /head
+
+                    <h2>JavaScript in Body Tag</h2>
+                    <br>
+                    Example:
+                    <br>
+                    <br>
+                    body
+                    <br>
+                    script
+                    <br>
+                    function myFunction(){
+                    <br>
+                    document.getElementById("example").innerHTML = "JScript Change";
+                    <br>
+                    }
+                    /script
+                    <br>
+                    /body
+
+                    <h2>External JavaScript</h2>
+                    <p>JavaScript uses .js as file extension. To use external JavaScript, insert the name of the script
+                        int <b>src</b> attribute of the beginning script tag.</p>
+                    <br>
+                    Example:
+                    <br>
+                    (script src="theScript.js")(/script)
+
+                    <h2>External References</h2>
+                    <p>External Scripts can be also referenced by using URL or folder.</p>
+                    <br>
+                    Example:
+                    <br>
+                    For URL:
+                    (script src="http://www.facebook.com")(/script)
+                    <br>
+                    For Folder:
+                    (script src="/js/theScript.js")(/script)
+                </div>
+                <a class="btn red block" onclick="output()">Output</a>
+                <div id="output">
+                    <h1>Output</h1>
+                    <h2>Display Possibilities</h2>
+                    <p>JavaScript can also display data in other ways:</p>
+                    <ul>
+                        <li><b>innerHTML</b>, for writing into an HTML element</li>
+                        <li><b>document.write()</b>, for writing into the HTML output</li>
+                        <li><b>window.alert()</b>, for writing into an alert box</li>
+                        <li><b>console.log()</b>, for writing into the browser code</li>
+                    </ul>
+
+                    <h2>Using innerHTML()</h2>
+                    <p>Example:</p>
+                    document.getElementById("example").innerHTML = 9 + 1;
+
+                    <h2>Using document.write</h2>
+                    <p>Example:</p>
+                    document.write(9 + 1);
+
+                    <h2>Using window.alert()</h2>
+                    <p>Example:</p>
+                    window.alert(9 + 1);
+
+                    <h2>Using console.log()</h2>
+                    <p>Example:</p>
+                    console.log(9 + 1);
+                </div>
+                <a class="btn red block" onclick="statements()">Statements</a>
+                <div id="statements">
+                    <h1>Statements</h1>
+                    <p>JavaScript statements:</p>
+                    <ul>
+                        <li>Values</li>
+                        <li>Operators</li>
+                        <li>Expressions</li>
+                        <li>Comments</li>
+                        <li>Keywords</li>
+                    </ul>
+
+                    <h2>Semicolons</h2>
+                    <p>Semicolons usually separate JavaScript statements
+                        <br>
+                        Add a semicolon at the end of each statement to execute the statement.
+                        <br>
+                        <br>Example:</p>
+                    var x, i, z;
+                    <br>
+                    x = 6;
+                    <br>
+                    i = 3;
+                    <br>
+                    z = x + i;
+
+                    <h2>White Space</h2>
+                    <p>Add white space to the script to make it more understandalbe and readable.
+                        <br>Example:</p>
+                    With white Space: var person = "Yves";
+                    <br>
+                    Without white space: var person="Yves";
+
+                    <h2>Line Length and Line Breaks</h2>
+                    <p>In case if a statement doesn't fit on a single line, place it after an operator:
+                        <br>Example:</p>
+                    document.getElementById("example").innerHTML =
+                    <br>
+                    "Hello Word!";
+
+                    <h2>Code Blocks</h2>
+                    <p>Statements can also be merged together in code blocks, inside the curly brackets {...}.
+                        <br>It is used to execute JavaScript Statements together.
+                        <br>Example:</p>
+
+                    function myFunction() {<br>
+                    document.getElementById("example1").innerHTML = "Hello World!";<br>
+                    document.getElementById("example2").innerHTML = "Anya Ngay?";<br>
+                    }
+
+                    <h2>Keywords</h2>
+                    <ul>
+                        <li>break - Terminates a loop</li>
+                        <li>continue - Starts at the top after getting out of the loop</li>
+                        <li>debugger - Calls the debugging function after stoppping the exectuion of JavaScript</li>
+                        <li>do ... while - While a condition is true, it executes block of JavaScript statements and
+                            repeat the block</li>
+                        <li>for - As long as the condition is true, it marks a block of JavaScript statements to
+                            execute.</li>
+                        <li>function - Daclares functions</li>
+                        <li>if ... else - It marks a block of JavaScript Statements that will be executed according to
+                            the condition.</li>
+                        <li>return - Exits function</li>
+                        <li>switch - It marks a block of JavaScript Statements that will be executed accroding to
+                            different cases.</li>
+                        <li>try ... catch - Executes error handling to a block of JavaScript Statements.</li>
+                        <li>var - Declares Variable</li>
+                    </ul>
+                </div>
+                <a class="btn red block" onclick="syntax()">Syntax</a>
+                <div id="syntax">
+                    <h1>Syntax</h1>
+                    <p>Set of rules on how the JavaScript programs constructed:
+                        <br>Example:</p>
+                    var x, i ,z;<br>
+                    x = 1; i = 9;<br>
+                    z = x + i;
+
+                    <h2>Values</h2>
+                    <p>Two types of values:</p>
+                    <ul>
+                        <li>Fixed values or literals</li>
+                        <li>Variable values or variables</li>
+                    </ul>
+
+                    <h2>Literals</h2>
+                    <p>Numbers - written with or without decimals.
+                        <br>Exampke: 100, 12.69</p>
+                    <p>Strings - written within single or dobule quotation.
+                        <br>Example: "JavaScript", 'JavaScript'</p>
+
+                    <h2>Variables</h2>
+                    <p>Used to store data values. It uses the keyword <b>var</b> for declaring variabels. The equal
+                        sign(=) is use for assigning values to variables
+                        <br>Example: <br>var x;
+                        <br>x = 10;</p>
+
+                    <h2>Operators</h2>
+                    <p>JavaScript uses Arithmetic Operators (*-/+) for computing values.
+                        <br>Example:
+                        <br>(1 + 1) * 123</p>
+                    <p>Equal sign (=) is used for assigning values, which is called the assignment operator.
+                        <br>Example: var i;<br>
+                        i = 10;</p>
+
+                    <h2>Expressions</h2>
+                    <p>A combination of values, operators, and variables that computes to a value. The computation is
+                        called an evaluation.<br>Example: 1 * 2 evaluates to 2. or x * 2</p>
+
+                    <h2>Keywords</h2>
+                    <p>Used to identify actions to be performed. The keyword var will the browser to make a variable.
+                        <br>Example: var i, a;<br>
+                        i = 2 + 1;<br>
+                        a = i * 100;</p>
+
+                    <h2>Comments</h2>
+                    <p>Comments statements are not actually executed in Javascript.</p>
+                    <p>Code after the double slashes or // or between the opening comment tag which is /* and the end
+                        comment tag */ is considered as a comment.
+                        <br>Example: //Execute the variable</p>
+
+                    <h2>Identifiers</h2>
+                    <p>These are names. It is used to name variables. In JavaSCript, the first character mus be a
+                        letter, or an underscore (_), or dollar sign ($).</p>
+
+                    <h2>Case Sensitive</h2>
+                    <p>All JavaScript identifiers are case sensitive.</p>
+                    <p>The variables firstname and firstName are two different variables.
+                        <br>Example: var firstname, firstName;
+                        <br> firstname = Ahh;
+                        <br> firstName = Ohh;</p>
+
+                    <h2>Camel Case</h2>
+                    <p>Hyphens are not allows in JavaScript. The (-) sign is reserved for subtractions.
+                        <br>Example: first-name, last-name, middle-initial</p>
+                    <p>Underscores, Upper Camel Case and Lower Camel Case are allowed in JavaScript
+                        <br>Example: <br>
+                        Underscore: first_name, last_name
+                        <br>Upper Camel Case: FirstName, LastName
+                        <br>Lower Camel Case: firstName, lastName</p>
+
+                    <h2>Character Set</h2>
+                    <p>Javascript uses Unicode character set. It cover almost all the characters, symbols, and
+                        punctuations in the world.</p>
+                </div>
+                <a class="btn red block" onclick="comments()">Comments</a>
+                <div id="comments">
+                    <h1>Comments</h1>
+                    <p>Used to explain code, and make it more understandable and more readable. It also used to prevent
+                        execution when testing alternative code.</p>
+
+                    <h2>Single Line Comments</h2>
+                    <p>This starts with double slash (//). Any text between // and end of the line will not be executed
+                        by JavaScript.
+                        <br>Example:<br> //Change Heading
+                        <br>//Change Paragraph</p>
+
+                    <h2>Multi-line Comments</h2>
+                    <p>This starts with /* and ends with */ signs.
+                        <br>Example:<br>
+                        /*<br>
+                        The code below is etc. etc.<br>
+                        */</p>
+
+                    <h2>Preventing Execution</h2>
+                    <p>Adding double slash (//) in front of the code line will change the code lines from executable
+                        lines to a comment.
+                        <br> //document.getElementById("JavaSEg").innerHTML = "First Page";<br>
+                        document.getElementById("JScriptEg") = "First Paragraph";</p>
+                </div>
+                <a class="btn red block" onclick="variables()">Variables</a>
+                <div id="variables">
+                    <h1>Variables</h1>
+                    <p>The containers for storing data values.</p>
+
+                    <h2>Identifiers</h2>
+                    <p>JavaScript variables should be identified with unique names.</p>
+                    <p>These unique names are also known as identifiers.</p>
+                    <p>It can be short names like x and y or more descriptive like name, age, speed, etc.</p>
+                    <p>General Rules for Constructing names for variables:</p>
+                    <ul>
+                        <li>It can contain letters, underscores, dollar signs, and digits.</li>
+                        <li>It must begin with a letter.</li>
+                        <li>It can also begin with dollar sign ($) and underscore (_)</li>
+                        <li>It is case sensitive (variable x and X are different from each other)</li>
+                        <li>Reserved words cannot be used as a names.</li>
+                    </ul>
+
+                    <h2>Assignment Operator</h2>
+                    <p>The equal sign (=) is the assignment operator and not an "equal to" operator.
+                        <br>Example: x = i + 1;</p>
+                    <p>The double equal sign (==) is considered as the "equal to" operator.</p>
+
+                    <h2>Data Types</h2>
+                    <p>It can hold numbers like 100 and also text values.</p>
+                    <p>Text values are called text strings.</p>
+                    <p>JScript can handle many data types. It is written inside the double or sign quotes. Number are
+                        written without using quotes. If you insert a number in quotes, it will be considered as a text
+                        string.
+                        <br>Example: <br>var qw = 123;<br>
+                        var name = "John";<br>
+                        var age = "13";</p>
+
+                    <h2>Declaring Variables</h2>
+                    <p>Declare a variable in JavaScript by using the keyword var.
+                        <br>Example: var x;
+                        <p>Assigning a value to the varaible by using the = sign.<br>
+                            x = 10;</p>
+
+                        <h2>Value = Undefined</h2>
+                        <p>Variables are often declared without a value. The value can be something that has to be
+                            calculated, or something that will be provided later, like user input.</p>
+
+                        <h2>Re-Declaring Variables</h2>
+                        <p>Re-declaraing a JavaScript varaibles will not lose it's value.</p>
+
+                        <h2>Arithmetic</h2>
+                        <p>You can do arithmetic with JavaScript variables by using the operators like = and *;
+                            <br>Example: var i = 1 + 2 + 3;</p>
+                </div>
+                <a class="btn red block" onclick="operators()">Operators</a>
+                <div id="operators">
+                    <h1>Operators</h1>
+                    <p>Assignment Operators (=) are used to assign values to a variable.
+                        <br>Example: var i = 2;</p>\
+                    <p>Addition Operator (+) are used to add numbers.
+                        <br>Example:<br>
+                        var z = 10;
+                        <br>var i = 10;
+                        <br>var y = z + i;</p>
+                    <p>Multiplication Operator (*) used to multiply numbers<br>
+                        Example: <br>
+                        var a = 1;
+                        <br> var s = 2;
+                        <br>var d = a + s;</p>
+
+                    <h2>Arithmetic Operators</h2>
+                    <ul>
+                        <li>+ = Addition</li>
+                        <li>- = Subtraction</li>
+                        <li>* = Multiplication</li>
+                        <li>** = Exponentiatin</li>
+                        <li>/ = Division</li>
+                        <li>% = Modulus</li>
+                        <li>++ = Increment</li>
+                        <li>-- = Decrement</li>
+                    </ul>
+
+                    <h2>Assignment Operators</h2>
+                    <ul>
+                        <li>"=" = x = y or y = x</li>
+                        <li>+= = x += y or x = x + y</li>
+                        <li>-= = x -= y or x = x - y</li>
+                        <li>*= = x *= y or x = x * y</li>
+                        <li>/= = x /= y or x = x / y</li>
+                        <li>%= = x %= y or x = x % y</li>
+                        <li>**= x **= y or x = x ** y</li>
+                    </ul>
+
+                    <h2>String Operators</h2>
+                    <p>Plus sign (+) operator is used to add strings.
+                        <br>Example:
+                        <br>var p1 = "Hi";
+                        <br> var p2 = "Hello";
+                        <br> var p3 = p1 + p2;</p>
+
+                    <h2>String and Numbers</h2>
+                    <p>Adding a number and a string will return a string.
+                        <br>Example:
+                        <br>var a = "Hi" + 5; = Hi5</p>
+
+                    <h2>Logical Operators</h2>
+                    <ul>
+                        <li>&& = logical and</li>
+                        <li>|| = logical or</li>
+                        <li>! = logical not</li>
+                    </ul>
+
+                    <h2>Type Operators</h2>
+                    <ul>
+                        <li>typeof = Returns the type of a variable</li>
+                        <li>instanceof = Returns true if an object is an instanve of an object type.</li>
+                    </ul>
+
+                    <h2>Bitwise Operators</h2>
+                    <ul>
+                        <li>& = AND</li>
+                        <li>| = OR</li>
+                        <li>~ = NOT</li>
+                        <li>^ = XOR</li>
+                        <li>
+                            <<=Zero fill left shift</li> <li>>> = Signed right shift
+                        </li>
+                        <li>>>> = Zerp fill right shift</li>
+                    </ul>
+                </div>
+                <a class="btn red block" onclick="arithmetic()">Arithmetic</a>
+                <div id="arithmetic">
+                    <h1>Arithmetic</h1>
+                    <p>Arithmetic Operations usually operates on two numbers.
+                        <br>Example: var x = 100 + 40;
+                        <br>or variables: var x = a + z;</p>
+                    <br>or expressions: var x = (100 + 40) / q;
+
+                    <h2>Operators and Operands</h2>
+                    <p>The arithmetic operation numbers are called operands.</p>
+                    <p>The operator to be performed between two operands is defined by operator.</p>
+                    <ul>
+                        <li>Operand = 100; Operator = +; Operand = 50</li>
+                    </ul>
+
+                    <h2>Adding</h2>
+                    <p>Plus sign (+) or the addition operator is used for adding numbers.
+                        <br> Example: var x = 5;
+                        <br> var i = 1;
+                        <br> var q = x + i;</p>
+
+                    <h2>Subtracting</h2>
+                    <p>Minus sign (-) or the subtraction operator is used for subtracting numbers.
+                        <br>Example: var x = 5;
+                        <br> var i = 1;
+                        <br> var q = x - i;</p>
+
+                    <h2>Multiplying</h2>
+                    <p>Multiplication sign (*) or the multiplication operator is used for multiplying numbers.
+                        <br>Example: var x = 5;
+                        <br> var i = 1;
+                        <br> var q = x * i;</p>
+
+                    <h2>Dividing</h2>
+                    <p>Division sign (/) or the division operator is used for dividing numbers.
+                        <br>Example: var x = 5;
+                        <br> var i = 1;
+                        <br> var q = x / i;</p>
+
+                    <h2>Remainder</h2>
+                    <p>Modulus operator (%) returns the division remainder.
+                        <br>Example: var x = 5;
+                        <br> var i = 2;
+                        <br> var q = x % i;</p>
+
+                    <h2>Incrementing</h2>
+                    <p>Increment Operator (++) is used for incrementing numbers.
+                        <br>Example: var x = 5;
+                        <br> x++;
+                        <br> var i = x</p>
+
+                    <h2>Decrementing</h2>
+                    <p>Decrement operator (--) is used for decrementing numbers.
+                        <br>Example: var x = 5;
+                        <br> x--;
+                        <br> var i = x</p>
+
+                    <h2>Exponentiation</h2>
+                    <p>Exponentiation operator (**) will raise the first operand to the power of the second operand.
+                        <br>Example: var x = 1;
+                        <br>var z = x ** 2;</p>
+
+                    <h2>Operatir Precedence</h2>
+                    <p>This describes the order in which operations are performed in an arithmetic expression.</p>
+                </div>
+                <a class="btn red block" onclick="assignment()">Assignment</a>
+                <div id="assignment">
+                    <h1>Assignment Operators</h1>
+                    <p>Assigns values to JavaScript Variables.</p>
+                    <ul>
+                        <li>"=" = x = y or x = y</li>
+                        <li>+= = x += y or x = x + y</li>
+                        <li>-= = x -= y or x = x - y</li>
+                        <li>*= = x *= y or x = x * y</li>
+                        <li>/= = x /= y or x = x / y</li>
+                        <li>%= = x %= y or x = x % y</li>
+                        <li>
+                            <<==x <<=y or x=x << y</li> <li>>>= = x >>= y or x = x >> y
+                        </li>
+                        <li>>>>= = x >>>= y or x = x >>> y</li>
+                        <li>&= = x &= y or x = x & y</li>
+                        <li>^= = x ^= y or x = x ^ y</li>
+                        <li>|= = x |= y or x = x | y</li>
+                        <li>**= = x **= y or x = x ** y</li>
+                    </ul>
+                    <p>Example: += adds a value to a variable.</p>
+                    var x = 1;
+                    <br>x += 5;
+                    <br>
+
+                    <p>Example: -= subtracts a value from a variable.</p>
+                    var x = 1;
+                    <br>x -= 5;
+                    <br>
+
+                    <p>Example: *= multiplies a variable.</p>
+                    var x = 1;
+                    <br>x *= 5;
+                </div>
+                <a class="btn red block" onclick="datatypes()">Data Types</a>
+                <div id="datatypes">
+                    <h1>Data Types</h1>
+                    <p>JavaScript can hold many data types: Objects, Strings, Numbers, etc.
+                        <br>Example:
+                        <br>var width = 20;
+                        <br>var firstName = "John";
+                        <br>var i = {country: "Philippines", city:"Baguio"}</p>
+
+                    <h2>Strings</h2>
+                    <p>Text Strings is a series of characters. It is written using single or double quotes.
+                        <br>Example:
+                        <br>var name = "John"; //Using double quotes
+                        <br>var name = 'John'; //Using single quotes</p>
+
+                    <h2>Numbers</h2>
+                    <p>Numbers can be written with or without decimal.
+                        <br>Example:
+                        <br>var i = 20; //With decimal
+                        <br>var i = 20.00; //Without decimal</p>
+
+                    <h2>Booleans</h2>
+                    <p>Booleans have two values: true or false.
+                        <br>var a = 1;
+                        <br>var b = 1;
+                        <br>var c = 3;
+                        <br>(a == b) //Returns True
+                        <br>(a == c) //Returns False</p>
+
+                    <h2>Arrays</h2>
+                    <p>Written with square brackets. Typically separated by commas.
+                        <br>Example: var cars = =["Honda", "Peugeot", "Ford"];</p>
+
+                    <h2>Objects</h2>
+                    <p>Written using curly braces.</p>
+                    <p>Written as name:value pairs, then separated by a comma.
+                        <br>Example: var individual = {lastName:"Doncic", firstName"Luka"};</p>
+
+                    <h2>typeof Operator</h2>
+                    <p>The typeof Operator use to find the type of a JavaScript varaible. It returns the type of a
+                        varaible or an expression.
+                        <br>Example:
+                        <br>typeof "" //Returns string
+                        <br>typeof "John" //Returns string</p>
+
+                    <h2>Undefined</h2>
+                    <p>A variable with a value has the value of undefined.
+                        <br>Example: var car; //Value is undefined</p>
+
+                    <h2>Values</h2>
+                    <p>Empty Strings has both valid value and a type.
+                        <br>Example: var name = "";</p>
+
+                    <h2>Null</h2>
+                    <p>Null suppoed to be something that doesn't actually exist, but in JavaScript, null is an object.
+                    </p>
+
+                    <h2>Primitive Data</h2>
+                    <p>A single simple data value with no added properties or methods</p>
+                    <p>The typeof operator can actually return one of the following primitive types:</p>
+                    <ul>
+                        <li>number</li>
+                        <li>boolean</li>
+                        <li>string</li>
+                        <li>undefined</li>
+                    </ul>
+
+                    <h2>Complex Data</h2>
+                    <p>typeof Operator can return one of the two complex types:</p>
+                    <ul>
+                        <li>object</li>
+                        <li>funtion</li>
+                    </ul>
+                    <br>
+                    <p>typeof Operator returns object for arrays, null, and objects. It doesn't return object for any
+                        functions.</p>
+                </div>
+                <a class="btn red block" onclick="objects()">Objects</a>
+                <div id="objects">
+                    <h2>Objects</h2>
+                    <p>It assigns a simple value to the varable name.
+                        <br>Example: var name = "John";</p>
+
+                    <h2>Definition</h2>
+                    <p>Create a JavaScript object with object literal. Object definition can actually span multiple
+                        lines.
+                        <br>Example:
+                        <br>var individual = {
+                        <br>lastName: "Doncic",
+                        <br>firstName: "Luka"};</p>
+
+                    <h2>Object Properties</h2>
+                    <p>name:value pairs in JavaScript Objects are also known as properties.</p>
+                    <ul>
+                        <li>lastName = Doncic</li>
+                        <li>firstName = Luka</li>
+                    </ul>
+
+                    <h2>Accessing Object Properties</h2>
+                    <p>Accessing object properties in two ways:</p>
+                    <ul>
+                        <li>objectName.propertyName</li>
+                        <li>objectName["propertyName"]</li>
+                    </ul>
+                </div>
+                <a class="btn red block" onclick="events()">Events</a>
+                <div id="events">
+                    <h1>Events</h1>
+                    <p>These are the things that happen to HTML elements. JavaScript can react to on these events.</p>
+                    <p>Example of HTML events:</p>
+                    <ul>
+                        <li>HTML input field was changed</li>
+                        <li>HTML button was clicked</li>
+                        <li>HTML web page has dinished loading</li>
+                    </ul>
+                    <p>HTML allows event handler attributes with JScript code that will be added to HTML elements.</p>
+                    <ul>
+                        <li>Single Quotes = (element event = 'JavaScript')</li>
+                        <li>Double Quotes = (element event = "JavaScript")</li>
+                    </ul>
+
+                    <h2>HTML Events</h2>
+                    <ul>
+                        <li>onchange = HTML element has been changed</li>
+                        <li>onclick = User clicks an HTML element</li>
+                        <li>onmouseover = User moves the mouse over an HTML element</li>
+                        <li>onmouseout = User moves the mouse away from an HTML element</li>
+                        <li>onkeydown = User pushes a keyboard key</li>
+                        <li>onload = Browser has finished loading the page</li>
+                    </ul>
+                </div>
+                <a class="btn red block" onclick="strings()">Strings</a>
+                <div id="strings">
+                    <h1>Strings</h1>
+                    <p>Used to store and manipulate text. String is zero or more characters wirtten inside quotes.</p>
+                    <ul>
+                        <li>var i = "John"; //Using Double Quotes</li>
+                        <li>var i = 'John'; //Using Single Quotes</li>
+                    </ul>
+
+                    <h2>Backslash escape character</h2>
+                    <p>Backslash escape character (\) turns special characters into string characters.</p>
+                    <ul>
+                        <li>Code (\') = Result (') = Single Quote</li>
+                        <li>Code (\") = Result (") = Double Quote</li>
+                        <li>Code (\\) = Result (\) = Backslash</li>
+                    </ul>
+                    <h2>Other escape sequences</h2>
+                    <ul>
+                        <li>\b = Backspace</li>
+                        <li>\f = Form Feed</li>
+                        <li>\n = New Line</li>
+                        <li>\r = Carriage Return</li>
+                        <li>\t = Horizontal Tabulator</li>
+                        <li>\v = Vertical Tabulator</li>
+                    </ul>
+                </div>
+                <a class="btn red block" onclick="stringmethods()">String Methods</a>
+                <div id="stringmethods">
+                    <h1>String Methods</h1>
+                    <p>String methods and properties are also available to primitive values.</p>
+
+                    <h2>Length</h2>
+                    <p>length property returns the length of the string.
+                        <br>Example:
+                        <br>var eg = "ASDFGH";
+                        <br>var eg1 = eg.length;</p>
+
+                    <h2>Finding a String in a String</h2>
+                    <h3>indexOf()</h3>
+                    <p>Using indexOf() method will return the index of the first occurrence of the specific text.
+                        <br>Example:
+                        <br>var eg = "Locate this";
+                        <br>var find = eg.indexOf("this");</p>
+
+                    <h3>lastIndexOf()</h3>
+                    <p>Using lastIndexOf() method will return the index of the first occurrence of the specific text.
+                        <br>Example:
+                        <br>var eg = "Locate this 'this' ";
+                        <br>var find = eg.lastIndexOf("this");</p>
+
+                    <h2>Searching for a String in a String</h2>
+                    <p>search() method used for searching a string in the specific value.
+                        <br>Example:
+                        <br>var eg = "Locate this";
+                        <br>var find = eg.search("this");</p>
+
+                    <h2>Extracting String Parts</h2>
+                    <p>3 methods for extracting a part of a string:</p>
+                    <ul>
+                        <li>substring(start, end)</li>
+                        <li>substr(start, length)</li>
+                        <li>slice(start, end)</li>
+                    </ul>
+
+                    <h2>slice() Method</h2>
+                    <p>This method extracts a part of string. It returns the extracted part that results to a new
+                        string.
+                        <br>Example:
+                        <br>var eg = "Apple, Banana, Kiwi";
+                        <br>var res = eg.slice(7, 13);</p>
+
+                    <h2>subtring() Method</h2>
+                    <p>This method is similar to slice(), but this method doesn't accept negative indexes.
+                        <br>Example:
+                        <br>var eg = "Apple, Banana, Kiwi";
+                        <br>var res = eg.substring(7, 13);</p>
+
+                    <h2>substr Method</h2>
+                    <p>This method is similar to slice(), the difference is the second parameter will have the specific
+                        length of the extracted part.
+                        <br>Example:
+                        <br>var eg = "Apple, Banana, Kiwi";
+                        <br>var res = eg.substr(7, 6);</p>
+
+                    <h2>Replacing String Content</h2>
+                    <p>replace() Method will replace the specific value with another value of a string.
+                        <br>Example:
+                        <br>eg = "Please visit my house";
+                        <br>var res = eg.replace("my", "your");</p>
+
+                    <h2>Convert Upper and Lower Case</h2>
+                    <p>toUpperCase() method is use to convert a string to upper case. While toLowerCase() method is use
+                        to convert a string to lower case.
+                        <br>Example:
+                        <br>var eg = "Luh";
+                        <br>var res = eg.toUpperCase(); //Upper Case
+                        <br>
+                        <br>var eg = "Luh";
+                        <br>var res = eg.toLowerCase(); //Upper Case</p>
+
+                    <h2>concat() Method</h2>
+                    <p>concat() Method joins two or more strings.
+                        <br>Example:
+                        <br>var eg = "Luh";
+                        <br>var eg1 = "Luh1";
+                        <br>var res = eg.concat(" ", eg1); //Upper Case</p>
+
+                    <h2>trim()</h2>
+                    <p>This method is use to remove whitespaces from strings.
+                        <br>var eg = " Luh ";
+                        <br>alert(eg.tring());
+
+                        <h2>Extracting String Characters</h2>
+                        <p>3 methods for extracting string characters:</p>
+                        <ul>
+                            <li>charCodeAt(position)</li>
+                            <li>chartAt(position)</li>
+                            <li>Property access []</li>
+                        </ul>
+
+                        <h2>chartAt() Method</h2>
+                        <p>This method returns the character of a specific index in a string.
+                            <br>var eg = "Luh";
+                            <br>eg.chartAt(0);</p>
+
+                        <h2>chartCodeAt() Method</h2>
+                        <p>This method will return the unicode of the character of a specific index in a string.
+                            <br>var eg = "Luh";
+                            <br>eg.charCodeAt(0); //Upper Case</p>
+
+                        <h2>Property Access</h2>
+                        <p>This method allows property access [] on strings.
+                            <br>var eg = "Luh";
+                            <br>eg[0]; //Upper Case</p>
+                </div>
+                <a class="btn red block" onclick="numbers()">Numbers</a>
+                <div id="numbers">
+                    <h1>Numbers</h1>
+                    <p>Numbers can be written with our without decimals.</p>
+
+                    <h3>JavaScript Numbers are always 64-bit Floating Point</h3>
+
+                    <h2>Precision</h2>
+                    <p>Integers are accurate up to 15 digits.
+                        <br>Example: var x = 9999999999999; // x will be 9999999999999</p>
+
+                    <h2>Number Strings</h2>
+                    <p>JavaScript strings can also have numeric content.
+                        <br>Example: var x = 100; //x is number
+                        <br>var y = "100"; //y is string</p>
+
+                    <h2>NaN - Not a Number</h2>
+                    <p>NaN or Not a nnumber is reserved word that indicates if a number is not a legal number.
+                        <br>Example: var x = 100 / "Apple"; // x will be NaN</p>
+
+                    <h2>Infinity</h2>
+                    <p>This is the value that will return if calculating a number outside the largest possible numbers.
+                        <br>Example: var eg = 1;
+                        <br>while (eg != Infinity){ // Execute until Infinity
+                        <br>eg = eg * eg;
+                        }</p>
+
+                    <h2>Hexadecimal</h2>
+                    <p>JScript interprets numeric constants as hexadecimal if they are preceeded by 0x.
+                        <br>Example: var x = 0xFF; // x is 255</p>
+                </div>
+                <a class="btn red block" onclick="numbermethods()">Number Methods</a>
+                <div id="numbermethods">
+                    <h1>Number Methods</h1>
+                    <p>Number methods and properties are also available to primitive values.</p>
+                    <h2>toString() Method</h2>
+                    <p>This method will return a number as a string.
+                        <br>var z = 123;
+                        <br>z.toString();
+                        <br>(123).toString();
+                        <br>(100 + 23).toString();</p>
+
+                    <h2>toExponential() Method</h2>
+                    <p>This method will return a string with a number rounded and written using exponential notation.
+                        <br>var x = 9.656;
+                        <br>x.toExponential(2);
+                        <br>x.toExponential(4);
+                        <br>x.toExponential(6);</p>
+
+                    <h2>toFixed() Method</h2>
+                    <p>This method will return a string with the number written with a specified number of decimals.
+                        <br>var x = 9.656;
+                        <br>x.toFixed(0);
+                        <br>x.toFixed(2);
+                        <br>x.toFixed(4);
+                        <br>x.toFixed(6);</p>
+
+                    <h2>toPrecision() Method</h2>
+                    <p>This method returns a string with a numnber written for a specific length.
+                        <br>var x = 9.656;
+                        <br>x.toPrecision();
+                        <br>x.toPrecision(2);
+                        <br>x.toPrecision(4);
+                        <br>x.toPrecision(6);</p>
+
+                    <h2>valueOf() Method</h2>
+                    <p>valueOf() method will return a number as a method.
+                        <br>var x = 123;
+                        <br>x.valueOf();
+                        <br>(123).valueOf();
+                        <br>(100 + 23).valueOf();100 + 23</p>
+                </div>
+                <a class="btn red block" onclick="array()">Array</a>
+                <div id="array">
+                    <h1>Arrays</h1>
+                    <p>Arrays is used to store multiple values in a single variable.
+                        <br>Example: var name = ["John", "Ralph"]</p>
+
+                    <h2>Definition</h2>
+                    <p>It is a special variable, that holds more than one value at a time.</p>
+
+                    <h2>Creating an Array</h2>
+                    <p>The easiest way to create an Array is by using array literal.
+                        <br>Syntax: var name_array = [item, item1, ...];</p>
+
+                    <h2>JavaScript Keyword new</h2>
+                    <p>Example of creating an Array and assigning values to it:
+                        <br>var name = new Array("John", "Ralph");</p>
+
+                    <h2>Elements of an Array</h2>
+                    <p>Referring th index number can acces an array element.
+                        <br>Example: var name = cars[0];</p>
+
+                    <h2>Changing an Array Element</h2>
+                    <p>Changes the value of the first element.
+                        <br>Example: name[0] = "John";</p>
+
+                    <h2>Access the Full Array</h2>
+                    <p>Referring the array name can access the full array.
+                        <br>Example: var name = ["John", "Ralph"];
+                        <br>document.getElementById("Example").innetHtml = name;</p>
+
+                    <h2>Arrays are Object</h2>
+                    <p>typeOf operator in JScript will return an object for arrays.
+                        <br>Example: var name = ["John", "Ralph", "20"];</p>
+
+                    <h2>Array Elements Can Be Objects</h2>
+                    <p>JScript variables can be objects.
+                        <br>Example: myArray[0] = Date.now;</p>
+
+                    <h2>Array Properties and Methods</h2>
+                    <p>Arrays are the built-in array properties and methods.
+                        <br>Example: var x = name.length;</p>
+
+                    <h2>Length Property</h2>
+                    <p>length property of an array will return the length of an array.
+                        <br>Example: var name = ["John", "Ralph"];
+                        <br>name.length;</p>
+
+                    <h2>Looping Array Elements</h2>
+                    <p>Using for loop is the safest way to loop through an array.
+
+                        <h2>Adding Array Elements</h2>
+                        <p>Using th push() method is the easiest way to add a new element to an array.</p>
+                </div>
+                <a class="btn red block" onclick="date()">Date</a>
+                <div id="date">
+                    <h1>Dates</h1>
+
+                    <h2>Creating Date Objects</h2>
+                    <p>Dates are created with the new Date() constructor.</p>
+                    <p>4 ways to create a new date objects:</p>
+                    <ul>
+                        <li>new Date()</li>
+                        <li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+                        <li>new Date(milliseconds)</li>
+                        <li>new Date(date string)</li>
+                    </ul>
+
+                    <h2>new Date()</h2>
+                    <p>This method creates a new date object with the current date and time.
+                        <br>Example: var det = new Date();</p>
+
+                    <h2>new Date(year, month, ...)</h2>
+                    <p>This method creates a new date object for a specific date and time.
+                        <br>Example: var det = new Date(2019, 11, 24, 10, 33, 30, 0);</p>
+
+                    <h2>Previous Century</h2>
+                    <p>1 and 2 digits years will be described as 19xx.
+                        <br>Example: var det = new Date(99, 11, 24);</p>
+
+                    <h2>new Date(dateString)</h2>
+                    <p>This method creates a new date ibject from a date string.
+                        <br>Example: var det = new Date("March 30, 2019 11:13:00");</p>
+
+                    <h2>new Date(milliseconds)</h2>
+                    <p>This method creates a new date object as zero time plus milliseconds.
+                        <br>Example: var det = new Date(0);</p>
+                </div>
+                <a class="btn red block" onclick="function12()">Functions</a>
+                <div id="function">
+                    <h1>Functions</h1>
+                    <p>A block of code that was designed to use for a particular type. It is executed when something
+                        calls it.
+                        <br>Example:
+                        <br>function thisFunction(p1){
+                        return p1; //Returns the product p1
+                        }</p>
+
+                    <h2>Function Syntax</h2>
+                    <p>Defined with the function keyword, then name, , then parentheses.</p>
+                    <p>It contains letters, underscores, dollar sign ($), and digits.</p>
+                    <p>It includes parameter names that are separated by a comma.</p>
+                    <p>It is placed inside the curly brakets {} for it to be exexuted.
+                        <br>Example:<br>
+                        function name(parameter1, param2...)<br>{
+                        //code to be executed<br>
+                        }</p>
+
+                    <h2>Return</h2>
+                    <p>Return statement will let the function stop executing.</p>
+                    <p>After the invoking statement, JavaScript will return and execute the code. Functions mostly
+                        compute a return value, this value is retunred back to the caller.</p>
+
+                    <h2>Local Variables</h2>
+                    <p>Variables actually declared within a function, and became LOCAL to the function.</p>
+                    <p>It can accessed from within the function.</p>
+                </div>
+            </div>
+
+            <div id="note2" style="display:none;">
+                <h1>CSS</h1>
+              <a class="btn1 green block" onclick="cssshowintroduction()">Introduction</a>
+<div id="cssintroduction">
+ <h2>Introduction</h2>
+        <p>CSS stands for Cascading Style Sheets, it is used to enlighten and decorate your websites. <br>
+        Depicting on how the content of your HTML should be shown in your websites. <br> A CSS code can be placed inside a HTML file, but it would only work for that certain HTML container, <br> by means a CSS should be saved with the .css extension instead in order for it to be properly utilized <br> by all of your HTML files. 
+        </p>
+</div>
+<a class="btn1 green block" onclick="csssyntax()">Syntax</a>
+<div id="csssyntax">
+  <h1>Syntax</h1>
+        <p>The syntax of a CSS is combined by a SELECTOR and a DECLARATION. <br> Where h1 in here would be the SELECTOR and inside the open and closed brackets are the DECLARATIONS.
+        </p>
+        <h3> Example Code </h3>
+        <p>
+            h1 and p are the SELECTORS and inside their brackets are the DECLARATIONS. <br> <br>
+            
+        h1{ <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color: blue; <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text-align: center; <br>
+        } <br>
+            <br>
+        p{ <br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color: Yellow;<br>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text-align: left; <br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font-size: 20px; <br>
+         }
+        </p>
+</div>
+<a class="btn1 green block" onclick="cssusage()">Usage</a>
+<div id="cssusage">
+  <h1>Usage</h1>
+        <p>There are three different ways on how you can use the Cascading Style Sheet. <br> <br> <br>
+        
+            1. External Style Sheet<br>
+            2. Internal Style Sheet<br>
+            3. Inline Style <br>
+            
+            <h3> External Style Sheet</h3>
+            <p> Upon using this style sheet, your HTML file should have a link that calls your css file.
+                <br><br>
+                EXAMPLE <br><br> <code> &lt;link rel="stylesheet" type="text/css" href="yourcssfile.css"&gt;</code>
+            </p>
+            <h3> Internal Style Sheet</h3>
+            <p> This style sheet is the other way around of External Style Sheet. People use this method when they want a unique style on the preferred HTML file.
+                <br><br>
+                EXAMPLE <br><br> <code>   &lt;style&gt; <br>
+                
+                h1{ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black; <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center; <br>
+                } <br>
+                &lt;/style&gt;</code>
+            </p>
+            <h3> Inline Style</h3>
+            <p> In this style, it is used if you want to place a style on one line. 
+                <br> <br>
+                EXAMPLE <br><br><code>   &lt;h1 style="color:red"&gt; <br>
+                
+                Heading 1
+                &lt;/h1&gt;</code>
+        
+            </p>
+</div>
+<a class="btn1 green block" onclick="csscolors()">Colors</a>
+<div id="csscolors">
+ <h1>Color</h1>
+        <p>
+            You can also use CSS to color your website. It can be used in texts, backgrounds, borders and etc.
+        </p> <br>
+        
+        <h3> Example Code </h3>
+            
+        &lt;h1 style="color:red;"&gt;   This is red  &lt;/p&gt;
+            
+        <br>
+        <p> You can set colors via RGB values, HSL values, RGBA values or just the color name</p>
+    
+</div>
+<a class="btn1 green block" onclick="cssbackgrounds()">Backgrounds</a>
+<div id="cssbackgrounds">
+<h1>Backgrounds</h1>
+        <p>
+            Just like the last topic, in here you can also set a background for your website using CSS. <br>
+            It can either be an image or just a touch of your favorite color. <br>
+        </p> <br>
+        
+        <h3> Example Code for Colors </h3>
+            <p>
+            body{<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: black;<br>
+            }<br>
+        </p>
+        <h3> Example Code for Images </h3>
+            <p>
+            body{<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url("image.gif");<br>
+            }<br>
+            </p>
+        <p> You can also set on how your background would appear. </p>
+        
+        <h3> Example Code </h3>
+         <p>
+        body{<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: black;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-repeat: no-repeat;<br>
+               &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-position: center;<br>
+            }<br>
+        </p>
+</div>
+<a class="btn1 green block" onclick="cssborders()">Borders</a>
+<div id="cssborders">
+<h1>Borders</h1>
+        <p>
+            In CSS you can specify the style, width or the color of your border. <br>
+            There are various of styles to choose from for example <br> a dashed border style defined a dashed border. <br>
+        </p> <br>
+        
+        <h3> Example Code for Borders </h3>
+            <p>
+            h1.dashed{<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-style: dashed;<br>
+            }<br>
+        </p>
+        <p> You can also set the width and height of your border.</p>
+        <h3> Example Code for Borders </h3>
+            <p>
+            h1.dashed{<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-style: dashed;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-width: 200px;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-height: 500px;<br>
+                
+            }<br>
+            </p>
+        <p> This are just few ways on how you can design your border.</p>
+        
+</div>
+<a class="btn1 green block" onclick="cssmargins()">Margins</a>
+<div id="cssmargins">
+  <h1>Margins</h1>
+        <p>
+            In CSS you can also specify if you want to give an element a margin. <br>
+            Values that can be used in a marging are the following. <br> <br>
+            Auto - if you want to let the browser calculate the margin. <br>
+            Length - You can specify your margin in px, pt, cm, etc. <br>
+            % - You can also specify your margin using percentages. <br>
+        </p> 
+        
+        <h3> Example Code for Margins </h3>
+            <pre>
+h1{<br>
+    margin-top: 20px;<br>
+    margin-bottom: 20px;<br>
+    margin-right: 20px;<br>
+    margin-left: 20px;<br>
+}<br>
+        </pre>
+        
+        <p> This are just few ways on how you can design your margin.</p>
+</div>
+<a class="btn1 green block" onclick="cssheightandwidth()">Height and Width</a>
+<div id="cssheightandwidth">
+ <h1>Height and Width</h1>
+        <p>
+            Just like before, in CSS you can control all the looks of your website, <br>
+            including the height or width of a chosen element. <br>
+        </p> 
+        
+        <h3> Example Code for Height and Width </h3>
+            <pre><p>
+h1{<br>
+    height: 200px;
+    width: 200px;
+}<br>
+        </p></pre>
+        
+        <p> You can also set the maximum width or height of an element with the max code.</p> <br>
+        <h3> Example Code for Max Height and Max Width</h3>
+         <pre><p>
+h1{<br>
+    max-height: 200px;
+    max-width: 200px;
+}<br>
+        </p></pre>
+</div>
+<a class="btn1 green block" onclick="cssboxmodel()">Box Model</a>
+<div id="cssboxmodel">
+ <h1>Box Model</h1>
+        <p>
+            Box Model is the term used when css editors talks about design and layouts. <br>
+            It is a box that wraps every HTML element around. <br>
+            It is a combination of margins, borders, paddings, and the content.<br>
+        </p> 
+        
+        <h3> Example Code for Box Model </h3>
+            <pre><p>
+h1{<br>
+    height: 200px;
+    width: 200px;
+    border: solid;
+    margin: 20px;
+}<br>
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your box model.</p>
+</div>
+<a class="btn1 green block" onclick="cssoutline()">Outline</a>
+<div id="cssoutline">
+ <h1>Outline</h1>
+        <p>
+            CSS Outline is a customizable line that is drawn around elements. <br>
+            CSS Outline has various properties, some of these are: <br><br>
+            outline-style <br>
+            outline-color <br>
+            outline-width <br>
+        </p> 
+        
+        <h3> Example Code for an Outline </h3>
+            <pre><p>
+h1.dashed{<br>
+    outline-style:dashed;
+    outline-color:red;
+}<br>
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your outline.</p>
+</div>
+<a class="btn1 green block" onclick="csstext()">Text</a>
+<div id="csstext">
+  <h1>Text</h1>
+        <p>
+            Text formatting with the use of CSS is fun. <br>
+            It gives your content some boost in design. <br>
+            With text formatting, you can also place your text wherever you wanted.<br>
+        </p> 
+        
+        <h3> Example Code for Text Formatting </h3>
+            <pre><p>
+h1{<br>
+    color: red;
+    text-decoration: underline;
+    text-indent: 50px;
+
+}<br>
+p{
+    color:black;
+    text-decoration: overline;
+    letter-spacing: -3px;
+    word-spacing: 10px;
+
+}<br>
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your text.</p>
+</div>
+<a class="btn1 green block" onclick="cssfonts()">Fonts</a>
+<div id="cssfonts">
+<h1>Fonts</h1>
+        <p>
+            In this topic will go around about Fonts in CSS. <br>
+            Just like the last topic, fonts also gives some boost in placing the right font in your content.<br>
+            There are various of fonts available, ill cover some here. <br>
+            <br>
+            Font-style is used to make your letters bold or italic. <br>
+        </p> 
+        
+        <h3> Example Code for Text Formatting </h3>
+            <pre><p>
+h1{<br>
+    font-family: "Times New Roman";
+    font-style: normal;
+
+}<br>
+p{
+    color:black;
+    font-style: italic;
+
+}<br>
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your fonts.</p>
+</div>
+<a class="btn1 green block" onclick="cssicons()">Icons</a>
+<div id="cssicons">
+ <h1>Icons</h1>
+        <p>
+            What is a website without icons. <br>
+            In CSS you can also manipulate your website with icons. <br>
+            You can add icons with the inline command &lt;i&gt;
+        </p> 
+        
+        <h3> Example Code for Icons </h3>
+            <pre><p>
+&lt;i class="fas fa-smile"&gt;&lt;/i&gt;
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your icons.</p>
+</div>
+<a class="btn1 green block" onclick="csslinks()">Links</a>
+<div id="csslinks">
+<h1>Links</h1>
+        <p>
+            In CSS you can style even links! <br>
+            The best part of it is that it can be designed with any CSS property. <br>
+            You can also add additional styles to your links depending on what state they're.<br>
+        </p> 
+        
+        <h3> Example Code for Linkz </h3>
+            <pre><p>
+a{
+    color: red;
+}
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your links.</p>
+</div>
+<a class="btn1 green block" onclick="cssalign()">Align</a>
+<div id="cssalign">
+ <h1>Align</h1>
+        <p>
+            In CSS you can also align HTML elements. <br>
+            In this topic, margin is always being used by people to further help them align their content. <br>
+            Here are examples of how you can align your code. <br>
+            
+        </p> 
+        
+        <h3> Example Code for Align </h3>
+            <pre><p>
+h1{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+        </p></pre>
+        
+        <p>This are just few ways on how you can design your align.</p>
+        
+       
+</div>
+<a class="btn1 green block" onclick="csspadding()">Padding</a>
+<div id="csspadding">
+ <h1>Padding</h1>
+        <p>
+            In CSS a padding is like a margin but it covers spaces around the element's content. <br>
+            This is majorly used if the element is inside a border. <br>
+        </p> 
+        
+        <h3> Example Code for Paddings </h3>
+            <pre><p>
+h1{<br>
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}<br>
+        </p></pre>
+        
+        <p> This are just few ways on how you can design your padding.</p>
+        
+</div> 
+        </div>
+				</div>
         <div class="footer">
-                <div class="footer-nav-left">
-                    <p>Copyright 2019 @ CreativeNature.com All Rights Reserve</p>
-                </div>
-                <div class="footer-nav-right">
-                </div>
+            <div class="footer-nav-left">
+                <p>Copyright 2019 @ CreativeNature.com All Rights Reserve</p>
+            </div>
+            <div class="footer-nav-right">
+            </div>
         </div>
 </body>
 
