@@ -1,0 +1,8 @@
+function showHTMLsyntax() {
+  var x = document.getElementById("HTMLsyntax");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
