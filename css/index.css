@@ -166,7 +166,7 @@
 }
 
 .footer {
-     background-color: #000000;
+     background-color: gray;
     position: relative;
     overflow: hidden;
     height: 50px;
@@ -181,10 +181,11 @@
 }
 
 .footer-nav-left p {
-    color: #ddd;
-    font-size: 10px;
+     color: #fff;
+    font-size: 17px;
     text-align: left;
     padding-top: 6px; 
+    font-weight: bold;
 }
 
 .footer-nav-right {

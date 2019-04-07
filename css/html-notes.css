@@ -97,9 +97,6 @@
     background-color: #fbdedb;
     display: inline-block;
     background: #e74c3c;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
     font-family: sans-serif;
     font-weight: 800;
@@ -107,8 +104,7 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+
     box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
     position: relative;
 }
@@ -127,7 +123,4 @@
 }
 .orange {
     background-color: orange;
-}
-h2{
-    color: white;
 }

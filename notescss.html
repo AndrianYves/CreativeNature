@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css-notes.css">
+
+    <script src="js/css-notes/cssshowintroduction.js"></script>
+    <script src="js/css-notes/cssalign.js"></script>
+    <script src="js/css-notes/cssbackgrounds.js"></script>
+    <script src="js/css-notes/cssborders.js"></script>
+    <script src="js/css-notes/cssboxmodel.js"></script>
+    <script src="js/css-notes/csscolors.js"></script>
+    <script src="js/css-notes/cssfonts.js"></script>
+    <script src="js/css-notes/cssheightandwidth.js"></script>
+    <script src="js/css-notes/cssicons.js"></script>
+    <script src="js/css-notes/csslinks.js"></script>
+    <script src="js/css-notes/cssmargins.js"></script>
+    <script src="js/css-notes/cssoutline.js"></script>
+    <script src="js/css-notes/csspadding.js"></script>
+    <script src="js/css-notes/csssyntax.js"></script>
+    <script src="js/css-notes/csstext.js"></script>
+    <script src="js/css-notes/cssusage.js"></script>
+    <script src="js/css-notes/displaycss.js"></script>
+    <script src="js/html-notes/displayhtml.js"></script>
+
+  </head>
+  <body>
+
+      <div id="note2">
+        <h2>CSS</h2>
+        <a class="btn1 green block" onclick="cssshowintroduction()">Introduction</a>
+        <div id="cssintroduction">
+          <h2>Introduction</h2>
+          <p>CSS stands for Cascading Style Sheets, it is used to enlighten and decorate your websites. <br>
+            Depicting on how the content of your HTML should be shown in your websites. <br> A CSS code can be placed inside a HTML file, but it would only work for that certain HTML container, <br> by means a CSS should be saved with the .css extension instead in order for it to be properly utilized <br> by all of your HTML files. 
+          </p>
+        </div>
+        <a class="btn1 green block" onclick="csssyntax()">Syntax</a>
+        <div id="csssyntax">
+          <h1>Syntax</h1>
+          <p>The syntax of a CSS is combined by a SELECTOR and a DECLARATION. <br> Where h1 in here would be the SELECTOR and inside the open and closed brackets are the DECLARATIONS.
+          </p>
+          <h3> Example Code </h3>
+          <p>
+            h1 and p are the SELECTORS and inside their brackets are the DECLARATIONS. <br> <br>
+            h1{ <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color: blue; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text-align: center; <br>
+            } <br>
+            <br>
+            p{ <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color: Yellow;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text-align: left; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font-size: 20px; <br>
+            }
+          </p>
+        </div>
+        <a class="btn1 green block" onclick="cssusage()">Usage</a>
+        <div id="cssusage">
+          <h1>Usage</h1>
+          <p>There are three different ways on how you can use the Cascading Style Sheet. <br> <br> <br>
+            1. External Style Sheet<br>
+            2. Internal Style Sheet<br>
+            3. Inline Style <br>
+          <h3> External Style Sheet</h3>
+          <p> Upon using this style sheet, your HTML file should have a link that calls your css file.
+            <br><br>
+            EXAMPLE <br><br> <code> &lt;link rel="stylesheet" type="text/css" href="yourcssfile.css"&gt;</code>
+          </p>
+          <h3> Internal Style Sheet</h3>
+          <p> This style sheet is the other way around of External Style Sheet. People use this method when they want a unique style on the preferred HTML file.
+            <br><br>
+            EXAMPLE <br><br> <code>   &lt;style&gt; <br>
+            h1{ <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center; <br>
+            } <br>
+            &lt;/style&gt;</code>
+          </p>
+          <h3> Inline Style</h3>
+          <p> In this style, it is used if you want to place a style on one line. 
+            <br> <br>
+            EXAMPLE <br><br><code>   &lt;h1 style="color:red"&gt; <br>
+            Heading 1
+            &lt;/h1&gt;</code>
+          </p>
+        </div>
+        <a class="btn1 green block" onclick="csscolors()">Colors</a>
+        <div id="csscolors">
+          <h1>Color</h1>
+          <p>
+            You can also use CSS to color your website. It can be used in texts, backgrounds, borders and etc.
+          </p>
+          <br>
+          <h3> Example Code </h3>
+          &lt;h1 style="color:red;"&gt;   This is red  &lt;/p&gt;
+          <br>
+          <p> You can set colors via RGB values, HSL values, RGBA values or just the color name</p>
+        </div>
+        <a class="btn1 green block" onclick="cssbackgrounds()">Backgrounds</a>
+        <div id="cssbackgrounds">
+          <h1>Backgrounds</h1>
+          <p>
+            Just like the last topic, in here you can also set a background for your website using CSS. <br>
+            It can either be an image or just a touch of your favorite color. <br>
+          </p>
+          <br>
+          <h3> Example Code for Colors </h3>
+          <p>
+            body{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: black;<br>
+            }<br>
+          </p>
+          <h3> Example Code for Images </h3>
+          <p>
+            body{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url("image.gif");<br>
+            }<br>
+          </p>
+          <p> You can also set on how your background would appear. </p>
+          <h3> Example Code </h3>
+          <p>
+            body{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: black;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-repeat: no-repeat;<br>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-position: center;<br>
+            }<br>
+          </p>
+        </div>
+        <a class="btn1 green block" onclick="cssborders()">Borders</a>
+        <div id="cssborders">
+          <h1>Borders</h1>
+          <p>
+            In CSS you can specify the style, width or the color of your border. <br>
+            There are various of styles to choose from for example <br> a dashed border style defined a dashed border. <br>
+          </p>
+          <br>
+          <h3> Example Code for Borders </h3>
+          <p>
+            h1.dashed{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-style: dashed;<br>
+            }<br>
+          </p>
+          <p> You can also set the width and height of your border.</p>
+          <h3> Example Code for Borders </h3>
+          <p>
+            h1.dashed{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-style: dashed;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-width: 200px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-height: 500px;<br>
+            }<br>
+          </p>
+          <p> This are just few ways on how you can design your border.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssmargins()">Margins</a>
+        <div id="cssmargins">
+          <h1>Margins</h1>
+          <p>
+            In CSS you can also specify if you want to give an element a margin. <br>
+            Values that can be used in a marging are the following. <br> <br>
+            Auto - if you want to let the browser calculate the margin. <br>
+            Length - You can specify your margin in px, pt, cm, etc. <br>
+            % - You can also specify your margin using percentages. <br>
+          </p>
+          <h3> Example Code for Margins </h3>
+          <pre>
+h1{<br>
+    margin-top: 20px;<br>
+    margin-bottom: 20px;<br>
+    margin-right: 20px;<br>
+    margin-left: 20px;<br>
+}<br>
+        </pre>
+          <p> This are just few ways on how you can design your margin.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssheightandwidth()">Height and Width</a>
+        <div id="cssheightandwidth">
+          <h1>Height and Width</h1>
+          <p>
+            Just like before, in CSS you can control all the looks of your website, <br>
+            including the height or width of a chosen element. <br>
+          </p>
+          <h3> Example Code for Height and Width </h3>
+          <pre><p>
+h1{<br>
+    height: 200px;
+    width: 200px;
+}<br>
+        </p></pre>
+          <p> You can also set the maximum width or height of an element with the max code.</p>
+          <br>
+          <h3> Example Code for Max Height and Max Width</h3>
+          <pre><p>
+h1{<br>
+    max-height: 200px;
+    max-width: 200px;
+}<br>
+        </p></pre>
+        </div>
+        <a class="btn1 green block" onclick="cssboxmodel()">Box Model</a>
+        <div id="cssboxmodel">
+          <h1>Box Model</h1>
+          <p>
+            Box Model is the term used when css editors talks about design and layouts. <br>
+            It is a box that wraps every HTML element around. <br>
+            It is a combination of margins, borders, paddings, and the content.<br>
+          </p>
+          <h3> Example Code for Box Model </h3>
+          <pre><p>
+h1{<br>
+    height: 200px;
+    width: 200px;
+    border: solid;
+    margin: 20px;
+}<br>
+        </p></pre>
+          <p>This are just few ways on how you can design your box model.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssoutline()">Outline</a>
+        <div id="cssoutline">
+          <h1>Outline</h1>
+          <p>
+            CSS Outline is a customizable line that is drawn around elements. <br>
+            CSS Outline has various properties, some of these are: <br><br>
+            outline-style <br>
+            outline-color <br>
+            outline-width <br>
+          </p>
+          <h3> Example Code for an Outline </h3>
+          <pre><p>
+h1.dashed{<br>
+    outline-style:dashed;
+    outline-color:red;
+}<br>
+        </p></pre>
+          <p>This are just few ways on how you can design your outline.</p>
+        </div>
+        <a class="btn1 green block" onclick="csstext()">Text</a>
+        <div id="csstext">
+          <h1>Text</h1>
+          <p>
+            Text formatting with the use of CSS is fun. <br>
+            It gives your content some boost in design. <br>
+            With text formatting, you can also place your text wherever you wanted.<br>
+          </p>
+          <h3> Example Code for Text Formatting </h3>
+          <pre><p>
+h1{<br>
+    color: red;
+    text-decoration: underline;
+    text-indent: 50px;
+
+}<br>
+p{
+    color:black;
+    text-decoration: overline;
+    letter-spacing: -3px;
+    word-spacing: 10px;
+
+}<br>
+        </p></pre>
+          <p>This are just few ways on how you can design your text.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssfonts()">Fonts</a>
+        <div id="cssfonts">
+          <h1>Fonts</h1>
+          <p>
+            In this topic will go around about Fonts in CSS. <br>
+            Just like the last topic, fonts also gives some boost in placing the right font in your content.<br>
+            There are various of fonts available, ill cover some here. <br>
+            <br>
+            Font-style is used to make your letters bold or italic. <br>
+          </p>
+          <h3> Example Code for Text Formatting </h3>
+          <pre><p>
+h1{<br>
+    font-family: "Times New Roman";
+    font-style: normal;
+
+}<br>
+p{
+    color:black;
+    font-style: italic;
+
+}<br>
+        </p></pre>
+          <p>This are just few ways on how you can design your fonts.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssicons()">Icons</a>
+        <div id="cssicons">
+          <h1>Icons</h1>
+          <p>
+            What is a website without icons. <br>
+            In CSS you can also manipulate your website with icons. <br>
+            You can add icons with the inline command &lt;i&gt;
+          </p>
+          <h3> Example Code for Icons </h3>
+          <pre><p>
+&lt;i class="fas fa-smile"&gt;&lt;/i&gt;
+        </p></pre>
+          <p>This are just few ways on how you can design your icons.</p>
+        </div>
+        <a class="btn1 green block" onclick="csslinks()">Links</a>
+        <div id="csslinks">
+          <h1>Links</h1>
+          <p>
+            In CSS you can style even links! <br>
+            The best part of it is that it can be designed with any CSS property. <br>
+            You can also add additional styles to your links depending on what state they're.<br>
+          </p>
+          <h3> Example Code for Linkz </h3>
+          <pre><p>
+a{
+    color: red;
+}
+        </p></pre>
+          <p>This are just few ways on how you can design your links.</p>
+        </div>
+        <a class="btn1 green block" onclick="cssalign()">Align</a>
+        <div id="cssalign">
+          <h1>Align</h1>
+          <p>
+            In CSS you can also align HTML elements. <br>
+            In this topic, margin is always being used by people to further help them align their content. <br>
+            Here are examples of how you can align your code. <br>
+          </p>
+          <h3> Example Code for Align </h3>
+          <pre><p>
+h1{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+        </p></pre>
+          <p>This are just few ways on how you can design your align.</p>
+        </div>
+        <a class="btn1 green block" onclick="csspadding()">Padding</a>
+        <div id="csspadding">
+          <h1>Padding</h1>
+          <p>
+            In CSS a padding is like a margin but it covers spaces around the element's content. <br>
+            This is majorly used if the element is inside a border. <br>
+          </p>
+          <h3> Example Code for Paddings </h3>
+          <pre><p>
+h1{<br>
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}<br>
+        </p></pre>
+          <p> This are just few ways on how you can design your padding.</p>
+        </div>
+      </div>
+
+          </div>
+
+                </div>
+      
+
+  </body>
+  </html>

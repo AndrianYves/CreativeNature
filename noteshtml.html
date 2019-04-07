@@ -1,0 +1,234 @@
+ <!DOCTYPE html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/html-notes.css">
+
+    <script src="js/html-notes/showHTMLintroduction.js"></script>
+    <script src="js/html-notes/showHTMLsyntax.js"></script>
+    <script src="js/html-notes/showHTMLheadings.js"></script>
+    <script src="js/html-notes/showHTMLparagraphs.js"></script>
+    <script src="js/html-notes/showHTMLstyles.js"></script>
+    <script src="js/html-notes/showHTMLtextFormatting.js"></script>
+    <script src="js/html-notes/showHTMLcomments.js"></script>
+    <script src="js/html-notes/showHTMLcolors.js"></script>
+    <script src="js/html-notes/showHTMLlinks.js"></script>
+    <script src="js/html-notes/showHTMLimages.js"></script>
+    <script src="js/html-notes/showHTMLtables.js"></script>
+    <script src="js/html-notes/showHTMLlists.js"></script>
+    <script src="js/html-notes/showHTMLid.js"></script>
+    <script src="js/html-notes/showHTMLresponsive.js"></script>
+    <script src="js/html-notes/showHTMLquotations.js"></script>
+    <script src="js/html-notes/displayhtml.js"></script>
+   
+  </head>
+  <body>
+
+<div id="note1"">
+        <h2>HTML</h2>
+        <!--          Topic 1          -->
+        <a class="btn2 orange block" onclick="showHTMLintroduction()">Introduction</a>
+        <div id="HTMLintroduction">
+          <h1>Introduction</h1>
+          <p>HTML stands for Hyper Text Markup Language, it is the skeleton of your website.<br>  It is primarily used for designing purposes in web pages and web application.<br> HTML can be very forgiving in the making of the structure. An HTML file should <br> always have &lt;html&gt; and an end tag of &lt;/html&gt; to avoid problems and it should have <br>an extension of .html.</p>
+        </div>
+        <!--          Topic 2          -->
+        <a class="btn2 orange block" onclick="showHTMLsyntax()">Syntax</a>
+        <div id="HTMLsyntax">
+          <h1>Syntax</h1>
+          <p>The main syntax of html are tags which consists of special characters like >, &lt; and /. <br> All the content of the html is placed on the body element consisting of text, document, <br> hyperlinks, etc.</p>
+          <h3> Example Code </h3>
+          &lt;!DOCTYPE html&gt; 
+          <br>
+          &lt;html&gt;
+          <br>
+          &lt;head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;HTML Syntax&lt;/title&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Sample Code&lt;/h1&gt;
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a Sample Code&lt;/p&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/html&gt;
+        </div>
+        <!--          Topic 3          -->
+        <a class="btn2 orange block" onclick="showHTMLheadings()">Headings</a>
+        <div id="HTMLheadings">
+          <h1>Headings</h1>
+          <p>There are 6 tags to be used for headings where &lt;h1&gt; is the most important <br>and the biggest text size while &lt;h6&gt; is the least concern heading and the smallest<br> text size in the 6 tags</p>
+          <h3> Example Code</h3>
+          <p>&lt;h1&gt;Sample output&lt;/h1&gt;</p>
+          <h1>Sample output</h1>
+          <p>&lt;h6&gt;Sample output&lt;/h6&gt;</p>
+          <h6>Sample output</h6>
+        </div>
+        <!--          Topic 4          -->
+        <a class="btn2 orange block" onclick="showHTMLparagraphs()">Paragraphs</a>
+        <div id="HTMLparagraphs">
+          <h1>Paragraphs</h1>
+          <p>Most Commonly use in html is the &lt;p&gt; element where it stands for paragraph which contains text and consist of many lines.</p>
+          <h3> Example Code</h3>
+          <p>&lt;p&gt;This is a paragraph. It's a sample paragraph.&lt;/p&gt;</p>
+        </div>
+        <!--          Topic 5          -->
+        <a class="btn2 orange block" onclick="showHTMLstyles()">Styles</a>
+        <div id="HTMLstyles">
+          <h1>Styles</h1>
+          <p>Everyone wants their website to be presentable and here comes the styles to make it more appealing.<br> The syntax for html style is &lt;tagname style="property:value;"&gt;</p>
+          <h3> Example Code</h3>
+          <p>This is the format for the background color:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body style="background-color:lightblue;"&gt;</p>
+          <br>
+          <p>This is the format for the text color:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 style="color:red;"&gt;Color red&lt;/h2&gt;
+          </p>
+          <br>
+          <p>This is the format for the text size:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 
+            style="font-size:150%;"&gt;Decent size&lt;/h1&gt;
+          </p>
+          <br>
+          <p>This is the format for the text alignment:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 
+            style="text-align:center;"&gt;Centered text&lt;/h1&gt;
+          </p>
+        </div>
+        <!--          Topic 6          -->
+        <a class="btn2 orange block" onclick="showHTMLtextFormatting()">Text Formatting</a>
+        <div id="HTMLtextFormatting">
+          <h1>Text Formatting</h1>
+          <p>HTML also have formatting elements. Formatting elements like:<br> &lt;b&gt; for Bold text<br> &lt;i&gt; for Italic text<br> &lt;strong&gt; for Important text.<br> &lt;em&gt; for Emphasized text <br>and there are many more that you can choose base on your preferences.</p>
+          <h3> Example Code</h3>
+          <p>&lt;b&gt;This text is in bold&lt;/b&gt;</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>This text is bold.</b>
+          <p>&lt;i&gt;This text is italic&lt;/i&gt;</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>This text is italic.</i>
+          <p>&lt;strong&gt;This text is strong&lt;/strong&gt;</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>This text is strong and quite similar to bold.</strong>
+          <p>&lt;em&gt;This text is emphasized&lt;/em&gt;</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>This text is emphasize and quite similar to italic.</em>
+        </div>
+        <!--          Topic 7          -->
+        <a class="btn2 orange block" onclick="showHTMLcomments()">Comments</a>
+        <div id="HTMLcomments">
+          <h1>Comments</h1>
+          <p>Comments is use to explain something or place a notification and reminder.</p>
+          <h3> Example Code</h3>
+          <p>The format for the comment is:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- This one is a comment --&gt;</p>
+        </div>
+        <!--          Topic 8          -->
+        <a class="btn2 orange block" onclick="showHTMLcolors()">Colors</a>
+        <div id="HTMLcolors">
+          <h1>Colors</h1>
+          <p>You can use HTML colors to attract audience and leave a trademark.<br>For example, Facebook use the word f and the color blue for their logo<br> and just by seeing that logo people will realize that it's facebook. It can<br> be used in text,background, and etc. <br><br>You can set HTML colors using color names(complicated one), RGB values,<br> HEX values, HSL values, RGBA values, and HSLA values.</p>
+          <h3> Example Code</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:Green;"&gt;Sample&lt;/h1&gt;</p>
+        </div>
+        <!--          Topic 9          -->
+        <a class="btn2 orange block" onclick="showHTMLlinks()">Links</a>
+        <div id="HTMLlinks">
+          <h1>Links</h1>
+          <p>One of the way to help the user navigate the document is by having the href attribute.<br> By using the &lt;a&gt; tag it can define the links. Not only you can link a text but you can also <br>link using images.</p>
+          <h3>Example Code for links</h3>
+          <p>&lt;a href="url/cool_images.jpg"&gt;HTML Links or HTML Images&lt;/a&gt;
+            <br>
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's easy to link in html :) 
+          </p>
+        </div>
+        <!--          Topic 10          -->
+        <a class="btn2 orange block" onclick="showHTMLimages()">Images</a>
+        <div id="HTMLimages">
+          <h1>Images</h1>
+          <p>Images can add color and vibrancy to your web page. It can also improve the quality of a web page.</p>
+          <h3> Example Code</h3>
+          <p>&lt;img src="fastcar.jpg" alt="Ferrari"&gt;<br><br>
+            The alt used is for alternative way to display, if the image cannot be displayed.
+          </p>
+        </div>
+        <!--          Topic 11          -->
+        <a class="btn2 orange block" onclick="showHTMLtables()">Tables</a>
+        <div id="HTMLtables">
+          <h1>Tables</h1>
+          <p>The &lt;table&gt; tag is used to define an html table.
+            <br>
+            HTML table consist of:<br> &lt;tr&gt; tag which is table row. <br>&lt;th&gt; tag which is table header.<br>&lt;td&gt; tag which is table data.
+          </p>
+          <h3> Example Code</h3>
+          <p>
+            &lt;table style=width:10%"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cars&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Nissan Skyline GTR&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+          </p>
+        </div>
+        <!--          Topic 12          -->
+        <a class="btn2 orange block" onclick="showHTMLlists()">Lists</a>
+        <div id="HTMLlists">
+          <h1>Lists</h1>
+          <p>HTML have 2 types of list:<br>An Unordered List<br>An Ordered List<br>
+            It's based on the preference of the user on what to use.
+          </p>
+          <h3> Example Code</h3>
+          <p>&lt;h1&gt;An Unordered List&lt;/h1&gt;
+            <br>
+            <br>
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;<br>
+            &lt;/ul&gt;
+          </p>
+          <br>
+          <p>
+            &lt;h1&gt;An Ordered List&lt;/h1&gt;<br><br>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;<br>
+            &lt;/ol&gt;
+          </p>
+        </div>
+        <!--          Topic 13          -->
+        <a class="btn2 orange block" onclick="showHTMLid()">ID</a>
+        <div id="HTMLid">
+          <h1>ID</h1>
+          <p>The id attribute is used for CSS and Javascript.For CSS each Id should have a unique element.</p>
+          <h3> Example Code</h3>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1 id="Garage"&gt;My Cars&lt;/h1&gt;
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class="cars"&gt;Trueno&lt;/h3&gt;
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="cars"&gt;RX7&lt;/h3&gt;
+          </p>
+        </div>
+        <!--          Topic 14          -->
+        <a class="btn2 orange block" onclick="showHTMLresponsive()">Responsive</a>
+        <div id="HTMLresponsive">
+          <h1>Responsive</h1>
+          <p>Having a responsive web design can automatically resize, shrink or enlarge a website <br>to make it more comfortable for the user wether the user is using a desktop, tablets, and phones.</p>
+          <h3> Example Code</h3>
+          <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+        </div>
+        <!--          Topic 15          -->
+        <a class="btn2 orange block" onclick="showHTMLquotations()">Quotations</a>
+        <div id="HTMLquotations">
+          <h1>Quotations</h1>
+          <p>HTML Quote is to support the arguments of the work in which it is being quoted. <br>The element for quote is &lt;q&gt;</p>
+          <h3> Example Code</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sean Hampton Quote is &lt;q&gt;A dream without ambition is like a car without gas... <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you're not going anywhere.&lt;q&gt;</p>
+        </div>
+      </div>
+      
+
+  </body>
+  </html>

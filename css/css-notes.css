@@ -1,119 +1,98 @@
-#btn1 green block{
-    background-color: lightgray;
-}
 #cssintroduction {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #csssyntax {
   width: 100%;
   padding: auto;
-  background-color:  lightpink;
-;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssusage {
   width: 100%;
   padding: auto;
-  background-color:   lightpink;
-;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #csscolors {
   width: 100%;
   padding: auto;
-  background-color:  lightpink;;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssbackgrounds {
   width: 100%;
   padding: auto;
-  background-color:  lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssborders {
   width: 100%;
   padding: auto;
-  background-color:  lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssmargins {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssheightandwidth {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssboxmodel {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssoutline {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #csstext {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssfonts {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssicons {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #csslinks {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #cssalign {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 #csspadding {
   width: 100%;
   padding: auto;
-  background-color: lightpink;
+  background-color: gray;
   display: none;
-    font-weight: bold;
 }
 .btn1{
  padding: 1em 2.1em 1.1em;
@@ -137,7 +116,6 @@
     -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
     position: relative;
-    font-weight: bold;
 }
 .btn1:hover, .btn1:focus {
     opacity: 0.8;
@@ -153,6 +131,5 @@
     display: block !important;
 }
 .green {
-    background-color: lightpink;
-        ;
+    background-color: green;
 }
