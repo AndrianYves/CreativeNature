@@ -1,6 +1,7 @@
 *, *:before, *:after {
     font-family: "Tahoma", Geneva, sans-serif;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
  html {
@@ -15,6 +16,7 @@
      margin: 0;
      background-color: #ffffff;
      text-align: center;
+     font-weight: bold;
 }
 
 .navmenu {
@@ -22,9 +24,10 @@
     margin-bottom: 5px;
     z-index: 1;
     overflow: hidden;
-    background-color: #333;
+    background-color: gray;
     position: fixed;
     width: 100%;
+    font-weight: bold;
 }
 
 .navlink {
@@ -32,6 +35,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    font-weight: bold;
+    background: lightblue;
 }
 
 .navlink a {
@@ -39,6 +44,7 @@
     padding: 14px 35px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .navlink a:hover {
@@ -50,6 +56,9 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    background: lightblue;
+    font-weight: bold;
+    
 }
 
 .navlink-notes a {
@@ -57,10 +66,12 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bold;
+    background: lightblue;
 }
 
 .navlink-notes a:hover {
-    background: #ddd;
+    background: lightgray;
     color: black;
 }
 
@@ -72,6 +83,7 @@
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
+    background: gray;
 }
 
 .container {
@@ -115,7 +127,7 @@
     float: left;
     height: 200px;
     width: 20%;
-    background: rgb(0, 0, 0);
+    background: lightblue;
     margin-left: 10px;
 }
 
@@ -123,7 +135,8 @@
     float: right;
     height: 98%;
     width: 70%;
-    background: #000;
+    background: 
+#A9A9A9;
     margin-right: 10px;
     position: relative;
 }
@@ -149,6 +162,7 @@
 
 .topic {
     text-align: center;
+    font-weight: bold;
 }
 
 .footer {

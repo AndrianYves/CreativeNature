@@ -1,0 +1,162 @@
+#btn red block {
+    background-color: rosybrown;
+}
+#introduction {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#whereto {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#output {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#statements {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#syntax {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#comments {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#variables {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#operators {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#arithmetic {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#assignment {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#datatypes {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#objects {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#events {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#strings {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#stringmethods {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#numbers {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#numbermethods {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#array {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#date {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+#function {
+  width: 100%;
+  padding: auto;
+  background-color: lightpink;
+  display: none;
+}
+.btn{
+ padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: #fbdedb;
+    background-color: #fbdedb;
+    display: inline-block;
+    background: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+.btn:hover, .btn:focus {
+    opacity: 0.8;
+}
+.btn:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+.btn.block {
+    display: block !important;
+}
+.red {
+    background-color: lightpink;
+}
