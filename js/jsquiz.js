@@ -1,41 +1,34 @@
-function corrector(){
-
-var ques1 = document.quiz.ques1.value;
-var ques2 = document.quiz.ques2.value;
-var ques3 = document.quiz.ques3.value;
-var correctAns = 0;
+var name=prompt("Enter your name please.");
     
-    if (ques1 == "literals"){
-        correctAns++;
+function myfunction(){
+    var v1=document.myform.q1.value;
+    var v2=document.myform.q2.value;
+    var v3=document.myform.q3.value;
+    var v4=document.myform.q4.value;
+    var v5=document.myform.q5.value;
+    var v6=document.myform.q6.value;
+    
+    var count=0;
+    
+    if(v1== "<i>"){
+        count++;
+    }
+    if(v2== "<b>"){
+        count++;
+    }
+    if(v3== "content"){
+        count++;
+    }
+    if(v4== "<div>"){
+        count++;
+    }
+    if(v5== "src"){
+        count++;
+    }
+    if(v6== "<br>"){
+        count++;
     }
     
-    if (ques2 == "identifiers"){
-        correctAns++;
-    }
-    
-    if (ques3 == "statements"){
-        correctAns++;
-    }
-    
-    var messages = ["Good", "Well Played", "Try Again Next Time"];
-    
-    var score;
-    
-    if (correctAns < 1){
-        score = 2;
-    }
-    
-    if (correctAns > 0 && correctAns < 3){
-        score = 1;
-    }
-    
-    if (correctAns > 2){
-        score = 0;
-    }
-   
- document.getElementById("after_submit").style.visibility = "visible";
-   
-   document.getElementById("message").innerHTML = messages[score]; 
-    
-    document.getElementById("number_correct").innerHTML = "Your total correct answers: " + correctAns;
+    alert(name+","+ " You got "+count+" correct answer/s!");
 }
+
